@@ -88,8 +88,22 @@
 
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA9_CPLQPx1nCcAKaprCTw0chmk-LudA9A",
+        authDomain: "diensten-f3bd1.firebaseapp.com",
+        databaseURL: "https://diensten-f3bd1.firebaseio.com",
+        projectId: "diensten-f3bd1",
+        storageBucket: "diensten-f3bd1.appspot.com",
+        messagingSenderId: "670414303837"
+    };
+    firebase.initializeApp(config);
+</script>
 <script src="jquery-1.12.4.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script>
     $( function() {
         $( ".column" ).sortable({
