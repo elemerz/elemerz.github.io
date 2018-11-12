@@ -13,14 +13,13 @@ body {
 * {
     box-sizing: border-box;
 }
-ul {
-    margin:0;
-    padding:0;
-    list-style: none;
-}
+/*ul {*/
+    /*margin:0;*/
+    /*padding:0;*/
+    /*list-style: none;*/
+/*}*/
 ul.main {
     border:1px solid red;
     margin:0 auto;
+    padding:0;
 }
-li > ul {margin-left: 1.5em;}
-li > ul > li > ul {margin-left: 1.5em;}
