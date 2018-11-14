@@ -1,0 +1,35 @@
+/***
+ Editing only this file, create a Flag with the 5 Olympic colors (blue, yellow, red, green, black) on a neutral Light gray background.
+ You are not allowed to use Image in any form (neither file nor Inline data URI !!!) ***/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: lightgray;
+}
+
+body {
+    border-left: 50px solid #0085c7; /*Blue*/
+    background: black;
+    border-right: 50px solid #df0024; /*red*/
+
+    display: block;
+    font-family: monospace;
+    font-size: 85px;
+    line-height: 100px;
+    width:241px;
+    height:100px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:5%
+}
+body:before{
+    content: '█';
+    color:#f4c300; /*yellow*/
+}
+
+body:after{
+    content: '█';
+    color:#009f3d; /*green*/
+}
