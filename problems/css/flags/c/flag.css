@@ -1,0 +1,14 @@
+/* Define the styles for that 1 div, so the outcome should be the flag of Roumania */
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+.yellow {
+    width: 80px;
+    height: 200px;
+    background: yellow;
+    border-left: 80px solid red;
+    border-right: 80px solid blue;
+}
+

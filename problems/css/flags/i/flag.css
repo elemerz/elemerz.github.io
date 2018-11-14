@@ -10,7 +10,7 @@ body {
     border-left: 50px solid aqua;
     background-color: blue;
     border-right: 50px solid red;
-    outline: 3px solid white;
+    outline: 10px solid white;
 
     display: block;
     font-family: monospace;
@@ -27,7 +27,7 @@ body:not(*:root) {
     width:540px;
 }
 body:before{
-    content: '█';
+    content: '\2588';
     color:navy;
     background-color:yellow;
     border-left: 50px solid maroon;
@@ -36,7 +36,7 @@ body:before{
 }
 
 body:after{
-    content: '█';
+    content: '\2588';
     color:fuchsia;
     background-color:purple;
     border-left: 50px solid green;
