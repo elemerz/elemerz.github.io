@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Test</title>
+  <link type="text/css" rel="stylesheet" href="css/graph.css">
+	<script language="JavaScript" src="js/sitestat.js"></script>
+	<script language="JavaScript">
+    function genLinks(){
+		  var crtLink;
+			for(var i=0;i<new Number(document.getElementById('txtLinks').value);i++){
+		    crtLink=document.createElement("a");
+
+		  }
+		};
+		function rnd(low,hi){
+		  return (low+Math.round(Math.random()*(hi-low)));
+		};
+		function doPlot(){
+		  var bgcolors=['red','green','blue','gray'];
+			var opacity=10*rnd(0,10);
+		  var diameter=rnd(10,450);
+		  var x=rnd(0,380);
+      var y=rnd(0,380);
+      var color='#000000';
+      var bgcolor=bgcolors[rnd(0,3)];
+      //alert('opacity='+opacity+"\ndiameter="+diameter+"\nx="+x+"\ny="+y+"\nbgcolor="+bgcolor);
+      var t=new Number(new Date());
+			siteStat.circle({opacity:opacity,diameter:diameter,x:x,y:y,color:color,bgcolor:bgcolor});
+			self.status="Time ellapsed="+(new Number(new Date())-t)
+		};
+		function doClear(){
+		  siteStat.clear();
+		};
+  </script>
+</head>
+<body>
+  <a href="#">Link-1</a>
+  <a href="#">Link-2</a>
+  <a href="#">Link-3</a>
+  <a href="#">Link-4</a>
+  <a href="#">Link-5</a>
+  <a href="#">Link-6</a>
+  <a href="#">Link-7</a>
+  <a href="#">Link-8</a>
+  <a href="#">Link-9</a>
+  <a href="#">Link-10</a>
+
+	<input type="button" name="btnPlot" value="PlotCircle" onclick="doPlot();">
+	<input type="button" name="btnClear" value="Clear Canvas" onclick="doClear();">
+  <input type="button" name="btnGenLinks" value="Generate 10 more links" onclick="genLinks();">
+</body>
+</html>

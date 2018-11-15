@@ -1,0 +1,58 @@
+/**Table layout*/
+#layoutGrid + .products{
+    display: table;
+    border:1px solid #cecece;
+    width:75%;
+    margin:0 auto;
+}
+#layoutGrid + .products > article{
+    display: table-row;
+    border:1px dotted goldenrod;
+}
+#layoutGrid + .products > article > .property{
+    display: table-cell;
+    border:1px solid #ddd;
+    border-collapse: collapse;
+    width:16.6667%;
+}
+
+/**Grid layout*/
+#layoutGrid:checked + .products{
+    display:inline-block;
+    width:auto;
+    border:1px solid #cecece;
+    margin:0 auto;
+}
+#layoutGrid:checked + .products > article{
+    display:inline-block;
+    border:1px dotted coral;
+    margin:10px;
+}
+#layoutGrid:checked + .products > article > .property{
+    margin:5px;
+    border:none;
+}
+#layoutGrid:checked + .products > article > .property-name,
+#layoutGrid:checked + .products > article > .property-details{
+    display:inline;
+}
+#layoutGrid:checked + .products > article > .property-price-old{
+    text-decoration: line-through;
+    color:#bbb;
+}
+#layoutGrid:checked + .products > article > .property-price-new{
+    color:green;
+    font-size: 140%;
+    font-weight: bold;
+}
+#layoutGrid:checked + .products > article > .property-price-new:after{
+    content:attr(currency);
+    margin-left:10px;
+}
+#layoutGrid:checked + .products > article > .property-discount:before{
+    content:'-';
+    margin-left: 10px;
+}
+#layoutGrid:checked + .products > article > .property-discount:after{
+    content:'%';
+}

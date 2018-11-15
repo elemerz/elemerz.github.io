@@ -1,0 +1,51 @@
+div#customPopup{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width:300px;
+  height:300px;
+  padding:0px;
+  border:3px outset #DCDCDC;
+  background:#cccccc;
+}
+div#customPopup *{
+  margin:0px;
+  padding:0px;
+}
+div#customPopup div.titlebar{
+	height:19px;
+	background: #5675AB;
+}
+div#customPopup ul.buttons{
+  list-style: none;
+  background: Lime;
+}
+div#customPopup ul.buttons li{
+  float:right;
+  margin-top:2px;
+  width:16px;
+  height:14px;
+  font-size: 1px;
+  background: Red;
+}
+div#customPopup div.titlebar li.minimize{
+  background: #cccccc url(../img/buttons.gif) no-repeat;
+}
+div#customPopup div.titlebar li.minimize_pressed{
+  background: #cccccc url(../img/buttons.gif) -16px no-repeat;
+}
+div#customPopup div.titlebar li.restore{
+  background: #cccccc url(../img/buttons.gif) no-repeat -32px;
+}
+div#customPopup div.titlebar li.restore_pressed{
+  background: #cccccc url(../img/buttons.gif) no-repeat -48px;
+}
+
+div#customPopup div.titlebar li.close{
+  margin:2px;
+  background: #cccccc url(../img/buttons.gif) no-repeat -64px;
+}
+div#customPopup div.titlebar li.close_pressed{
+  margin:2px;
+  background: #cccccc url(../img/buttons.gif) no-repeat -80px;
+}

@@ -1,0 +1,69 @@
+/***
+ Editing only this file, create an imaginary Flag of Japan with a bull's eye instead of the red dot).
+ You are not allowed to use Image in any form (neither file nor Inline data URI !!!) ***/
+* {
+    box-sizing: border-box;
+    /*
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    */
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+body {
+    border: 30px solid red;
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    padding:0;
+    font-family: monospace;
+    font-size: 55px;
+    line-height: 50px;
+
+}
+
+body:before, body:after {
+    position:absolute;
+    top:-20px;
+    left:0;
+    margin:0;
+    padding:0;
+    content: '\25cf';
+    display: block;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    font-size: 410px;
+    text-align: center;
+}
+body:before {
+    color: magenta;
+    top:-50px;
+    left:-30px;
+}
+
+body:after {
+    color: yellow;
+    font-size: 280px;
+    top:-43px;
+    left:-30px;
+}

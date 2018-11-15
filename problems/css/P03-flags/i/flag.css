@@ -1,0 +1,45 @@
+/***
+ Editing only this file, create an imaginary Flag with 13 colors (use 13 out of the 16 named HTML 3.2 colors: http://www.december.com/html/spec/color16.html).
+ You are not allowed to use Image in any form (neither file nor Inline data URI !!!) ***/
+* {box-sizing: border-box;}
+html {
+    background: olive;
+}
+
+body {
+    border-left: 50px solid aqua;
+    background-color: blue;
+    border-right: 50px solid red;
+    outline: 10px solid white;
+
+    display: block;
+    font-family: monospace;
+    font-size: 85px;
+    line-height: 100px;
+    width:554px;
+    height:100px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:5%
+}
+/*http://browserhacks.com/*/
+body:not(*:root) {
+    width:540px;
+}
+body:before{
+    content: '\2588';
+    color:navy;
+    background-color:yellow;
+    border-left: 50px solid maroon;
+    border-right: 50px solid teal;
+    padding-left:50px;
+}
+
+body:after{
+    content: '\2588';
+    color:fuchsia;
+    background-color:purple;
+    border-left: 50px solid green;
+    border-right: 50px solid lime;
+    padding-left:50px;
+}

@@ -1,0 +1,13 @@
+/*Put your styling here*/
+.custom-checkbox{
+    display:none; /*hide the original (poorly stylable) input*/
+}
+.custom-checkbox+label{
+    display:inline-block; /*show the label right after the hidden input as inline-block, to be sizable*/
+    width:24px;
+    height:24px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAABiBAMAAAC44A5sAAAAHlBMVEUAAAD////j4+Po6Og0m8q73u14vNzS6fPo9Pml0+eHAh8mAAAAAXRSTlMAQObYZgAAADdJREFUOMtjUDaGAyMGQ0E4EBrloHOUkADDKBgFgwPQNgdLpgFBIZQj5gIEgbTniIcCQSNtczAAE9M8XT/L2G0AAAAASUVORK5CYII=") no-repeat 0 0;
+}
+.custom-checkbox:checked+label{
+    background-position: 0 -74px;
+}

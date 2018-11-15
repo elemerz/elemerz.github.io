@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Popup Window</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script language = "JavaScript" src = "js/popup.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/popup.css">
+  </head>
+  <body>
+    <input type="button" name="btnShowWindow" value="Show Window" onclick="showCustomPopup();">
+    <div id="customPopup" draggable="true">
+      <div class="titlebar">
+        <ul class="buttons">
+          <li class="close" onmousedown="mouseDown(this);" onmouseup="mouseUp(this);" onmouseout="mouseOut(this);">&nbsp;</li>
+          <li class="restore" onmousedown="mouseDown(this);" onmouseup="mouseUp(this);" onmouseout="mouseOut(this);">&nbsp;</li>
+          <li class="minimize" onmousedown="mouseDown(this);" onmouseup="mouseUp(this);" onmouseout="mouseOut(this);">&nbsp;</li>
+        </ul>
+      </div>
+      <div class="content">
+        This is content Line 1 this line is intentionally that long that content will go outside...<br/>
+        This is content Line 2<br/>
+        This is content Line 3<br/>
+        This is content Line 4<br/>
+        This is content Line 5<br/>
+      </div>
+    </div>
+  </body>
+</html>
