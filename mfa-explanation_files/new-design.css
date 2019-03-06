@@ -212,7 +212,7 @@ html[xmlns] #mainMenuSystem {
 }
 .footer .site-banner {
   position: absolute;
-  background: #3368A1 url("../images/goed-geregeld-white.png") no-repeat 15% 60%;
+  background: #3368A1 url("goed-geregeld-white.png") no-repeat 15% 60%;
   background-size: 40%;
   border-radius: 15px 15px 0 0;
   -ms-transform: skewX(-10deg);
