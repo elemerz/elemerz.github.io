@@ -1,3 +1,4 @@
 # elemerz.github.io
 Eli's Github pages:
-- [Web Training](webtraining.html)
+- ![Web Training](webtraining\favicon.png)[Web Training](webtraining\webtraining.html)
+- ![Angular](angular\favicon.png)[Angular](angular\angular.html)
