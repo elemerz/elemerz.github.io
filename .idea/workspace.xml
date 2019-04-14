@@ -2,8 +2,190 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6099907-abb2-445e-9f06-4ecc484e857e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webtraining.html" afterPath="$PROJECT_DIR$/webtraining.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot/resources/BuildingARESTAPIWithSpring.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot/favicon.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot/springboot.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/angular.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/angular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/favicon16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/analytics.js.download" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/certificaat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/famed-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/goed-geregeld-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/jquery.min.js.download" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/main-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-common-issues_files/new-design.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/2factoractivationdialog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/2wegeauth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/analytics.js.download" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/certificaat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/famed-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/goed-geregeld-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/google_authenticator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/jquery.min.js.download" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/main-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/new-design.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/userdetails.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa-explanation_files/userslist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mfa_explanation.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/.idea/css-interaction.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/.idea/P13-custom-styled-checkbo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/.idea/P14-layout-switcher.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webtraining/webtraining.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webtraining/webtraining.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/angular.html" afterPath="$PROJECT_DIR$/angular/angular.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webtraining/webtraining.html" afterPath="$PROJECT_DIR$/webtraining/webtraining.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Books/2006-EricMayer-CSS.The.Definitive.Guide.3rd.Edition.pdf" afterPath="$PROJECT_DIR$/webtraining/resources/Books/2006-EricMayer-CSS.The.Definitive.Guide.3rd.Edition.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Books/2011-EricMayer-CSSPocket Reference- 4thed.pdf" afterPath="$PROJECT_DIR$/webtraining/resources/Books/2011-EricMayer-CSSPocket Reference- 4thed.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Books/2016-CSSMastery-3rd Edition.PDF" afterPath="$PROJECT_DIR$/webtraining/resources/Books/2016-CSSMastery-3rd Edition.PDF" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Books/2016-UnderstandingFlexbox.pdf" afterPath="$PROJECT_DIR$/webtraining/resources/Books/2016-UnderstandingFlexbox.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Books/Problem-Solution-Gain Approach Guide - elemerz@gmail.com - Gmail.pdf" afterPath="$PROJECT_DIR$/webtraining/resources/Books/Problem-Solution-Gain Approach Guide - elemerz@gmail.com - Gmail.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/angular/angular.css" afterPath="$PROJECT_DIR$/common/css/common.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/angular/angular.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jquery-3.3.1.js" afterPath="$PROJECT_DIR$/common/js/3rdparty/jquery/jquery-3.3.1.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jquery-3.3.1.min.js" afterPath="$PROJECT_DIR$/common/js/3rdparty/jquery/jquery-3.3.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jquery-ui.min.js" afterPath="$PROJECT_DIR$/common/js/3rdparty/jquery/jquery-ui.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/one-liners.js" afterPath="$PROJECT_DIR$/common/js/one-liners.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/css/menu.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/css/menu.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.exe" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.exe" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.htm" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.idemo" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.idemo" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.swf" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/demo/p01-pure-css-menu.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P01-dropdown-menu/js/iemenu.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P01-dropdown-menu/js/iemenu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/css/popup.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/css/popup.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/demo/p02-popup-window.exe" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/demo/p02-popup-window.exe" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/demo/p02-popup-window.htm" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/demo/p02-popup-window.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/demo/p02-popup-window.idemo" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/demo/p02-popup-window.idemo" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/demo/p02-popup-window.swf" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/demo/p02-popup-window.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/demo/p02-popup-window.txt" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/demo/p02-popup-window.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/img/buttons.gif" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/img/buttons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P02-popup-window/js/popup.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P02-popup-window/js/popup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/a/flag.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/a/flag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/a/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/a/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/b/flag.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/b/flag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/b/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/b/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/c/flag.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/c/flag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/c/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/c/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/d/flag.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/d/flag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/d/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/d/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/e/flag.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/e/flag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/e/flag.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/e/flag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/f/flag.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/f/flag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/f/flag.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/f/flag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/g/flag.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/g/flag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/g/flag.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/g/flag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/h/flag.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/h/flag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/h/flag.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/h/flag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/i/flag.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/i/flag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/i/flag.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/i/flag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/j/flag.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/j/flag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/j/flag.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/j/flag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P03-flags/roFlag.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P03-flags/roFlag.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/chess.jpg" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/chess.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/css/chess.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/css/chess.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/demo/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/demo/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/demo/p04.exe" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/demo/p04.exe" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/demo/p04.htm" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/demo/p04.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/demo/p04.idemo" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/demo/p04.idemo" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/demo/p04.swf" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/demo/p04.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/img/sel.gif" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/img/sel.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P04-chess/js/chess.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P04-chess/js/chess.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/css/graph.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/css/graph.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue0.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue10.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue100.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue20.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue20.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue30.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue30.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue40.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue40.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue50.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue50.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue60.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue60.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue70.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue70.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue80.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue80.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/blue90.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/blue90.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/filter-invalid.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/filter-invalid.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray0.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray10.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray100.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray20.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray20.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray30.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray30.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray40.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray40.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray50.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray50.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray60.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray60.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray70.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray70.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray80.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray80.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/gray90.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/gray90.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green0.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green10.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green100.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green20.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green20.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green30.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green30.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green40.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green40.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green50.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green50.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green60.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green60.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green70.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green70.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green80.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green80.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/green90.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/green90.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red.gif" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red0.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red10.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red100.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red20.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red20.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red30.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red30.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red40.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red40.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red50.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red50.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red60.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red60.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red70.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red70.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red80.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red80.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/img/red90.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/img/red90.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/js/canvases.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/js/canvases.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/js/graph.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/js/graph.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/js/graph_c.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/js/graph_c.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/js/sitestat.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/js/sitestat.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P05/js/wz_jsgraphics.js" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P05/js/wz_jsgraphics.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P06/css/style.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P06/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P06/freestyle.gif" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P06/freestyle.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P06/img/classes.jpg" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P06/img/classes.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P06/img/home.jpg" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P06/img/home.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P06/img/menueli.zip" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P06/img/menueli.zip" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P06/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P06/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P12-css-interaction/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P12-css-interaction/style.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P12-css-interaction/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/css/style.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P13-custom-styled-checkbo/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/img/01-checkbox-unset.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P13-custom-styled-checkbo/img/01-checkbox-unset.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/img/02-checkbox-set.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P13-custom-styled-checkbo/img/02-checkbox-set.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/img/custom-checkbox.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P13-custom-styled-checkbo/img/custom-checkbox.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P13-custom-styled-checkbo/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P13-custom-styled-checkbo/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/css/style.css" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P14-layout-switcher/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/img/01-checkbox-unset.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P14-layout-switcher/img/01-checkbox-unset.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/img/02-checkbox-set.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P14-layout-switcher/img/02-checkbox-set.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/img/custom-checkbox.png" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P14-layout-switcher/img/custom-checkbox.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problems/css/P14-layout-switcher/index.html" afterPath="$PROJECT_DIR$/webtraining/resources/problems/css/P14-layout-switcher/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +200,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webtraining.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webtraining.html">
+      <file leaf-file-name="springboot.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot/springboot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="176" column="69" lean-forward="false" selection-start-line="176" selection-start-column="69" selection-end-line="176" selection-end-column="69" />
+            <state relative-caret-position="374">
+              <caret line="22" column="81" lean-forward="false" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -53,6 +235,7 @@
         <option value="$PROJECT_DIR$/webtraining.css" />
         <option value="$PROJECT_DIR$/problems/css/flags/j/j/flag.html" />
         <option value="$PROJECT_DIR$/webtraining.html" />
+        <option value="$PROJECT_DIR$/springboot/springboot.html" />
       </list>
     </option>
   </component>
@@ -96,6 +279,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elemerz.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,7 +446,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19694000" />
+    <option name="totallyTimeSpent" value="19819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -238,16 +467,16 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,305 +490,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="true" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186082">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
     <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.4.js" />
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
     <entry file="file://$PROJECT_DIR$/problems/css/flags/j/j/flag.html" />
     <entry file="file://$PROJECT_DIR$/problems/css/flags/j/j/flag.css" />
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="true" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186082">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
     <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.4.js" />
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
     <entry file="file://$PROJECT_DIR$/problems/css/flags/j/j/flag.html" />
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186286">
-          <caret line="10958" column="7" lean-forward="true" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186082">
-          <caret line="10958" column="7" lean-forward="false" selection-start-line="10958" selection-start-column="7" selection-end-line="10958" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
+    <entry file="file://$PROJECT_DIR$/jquery-1.12.4.js" />
     <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.4.js" />
-    <entry file="file://$PROJECT_DIR$/diensten.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtraining.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/diensten.html" />
+    <entry file="file://$PROJECT_DIR$/webtraining.css" />
     <entry file="file://$PROJECT_DIR$/problems/css/flags/j/j/flag.html" />
-    <entry file="file://$PROJECT_DIR$/webtraining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="176" column="69" lean-forward="false" selection-start-line="176" selection-start-column="69" selection-end-line="176" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webtraining.html" />
   </component>
 </project>
