@@ -55,6 +55,11 @@ function getCurrentYear() {
     return new Date().getFullYear();
 }
 
+function formatDate(lngDate) {
+      //https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
+      return new Date(lngDate).toLocaleDateString('nl-NL', {year:"numeric",month:"2-digit", day:"2-digit"});
+}
+
 /**Array extensions*/
 /**Removes all the elements from an array.*/
 Array.method('clear', function() {
