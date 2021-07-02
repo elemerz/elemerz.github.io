@@ -1,10 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>3D CSS Bar example</title>
+    <style>
+      /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */ #tridiv {
+        perspective: 800px;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        font-size: 75%;
+      }
+      .face {
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+      }
+      .scene, .shape, .face, .face-wrapper, .cr {
+        position: absolute;
+        transform-style: preserve-3d;
+      }
+      .scene {
+        width: 80em;
+        height: 80em;
+        top: 50%;
+        left: 50%;
+        margin: -40em 0 0 -40em;
+      }
+      .shape {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform-origin: 50%;
+      }
+      .face, .face-wrapper {
+        overflow: hidden;
+        transform-origin: 0 0;
+        backface-visibility: hidden;
+        /* hidden by default, prevent blinking and other weird rendering glitchs */
+      }
+      .face {
+        background-size: 100% 100%!important;
+        background-position: center;
+      }
+      .face-wrapper .face {
+        left: 100%;
+        width: 100%;
+        height: 100%
+      }
+      .photon-shader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%
+      }
+      .side {
+        left: 50%;
+      }
+      .cr, .cr .side {
+        height: 100%;
+      }
+      [class*="cuboid"] .ft, [class*="cuboid"] .bk {
+        width: 100%;
+        height: 100%;
+      }
+      [class*="cuboid"] .bk {
+        left: 100%;
+      }
+      [class*="cuboid"] .rt {
+        transform: rotateY(-90deg) translateX(-50%);
+      }
+      [class*="cuboid"] .lt {
+        transform: rotateY(90deg) translateX(-50%);
+      }
+      [class*="cuboid"] .tp {
+        transform: rotateX(90deg) translateY(-50%);
+      }
+      [class*="cuboid"] .bm {
+        transform: rotateX(-90deg) translateY(-50%);
+      }
+      [class*="cuboid"] .lt {
+        left: 100%;
+      }
+      [class*="cuboid"] .bm {
+        top: 100%;
+      }
+      /* .bar styles */
+      .bar {
+        transform:translate3D(0em, -6em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        opacity:1;
+        width:3.375em;
+        height:12em;
+        margin:-6em 0 0 -1.6875em;
+      }
+      .bar .ft {
+        transform:translateZ(1.5em);
+      }
+      .bar .ft .photon-shader {
+        text-indent: 8px;
+        padding-top: 4px;
+      }
+      .bar .bk {
+        transform:translateZ(-1.5em) rotateY(180deg);
+      }
+      .bar .rt, .bar .lt {
+        width:3em;
+        height:12em;
+      }
+      .bar .tp, .bar .bm {
+        width:3.375em;
+        height:3em;
+      }
+      .bar .face {
+        background-color:#fff67a;
+      }
+    </style>
 </head>
 <body>
-$END$
+<div id="tridiv">
+  <div class="scene" style="-webkit-transform:rotateX(-28deg) rotateY(-26deg); -moz-transform:rotateX(-28deg) rotateY(-26deg); -ms-transform:rotateX(-28deg) rotateY(-26deg); transform:rotateX(-28deg) rotateY(-26deg); ">
+    <div class="shape cuboid-1 bar">
+      <div class="face ft">
+        <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.04);">3.14</div>
+      </div>
+      <div class="face bk">
+        <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.04);"></div>
+      </div>
+      <div class="face rt">
+        <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.04);"></div>
+      </div>
+      <div class="face lt">
+        <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.04);"></div>
+      </div>
+      <div class="face bm">
+        <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.04);"></div>
+      </div>
+      <div class="face tp">
+        <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.04);"></div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
