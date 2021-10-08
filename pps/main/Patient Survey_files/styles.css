@@ -531,7 +531,7 @@ button.btn-action.btn-back {
   background-color: rgba(0, 185, 0, 0.2);
   border: 1px solid rgba(0, 185, 0, 0.5);
   color: #2a5270;
-  background-image: url('alert-success.png');
+  background-image: url('../alert-success.png');
   background-repeat: no-repeat;
   background-position: 13px 50%;
 }
@@ -540,7 +540,7 @@ button.btn-action.btn-back {
   background-color: rgba(239, 96, 121, 0.2);
   border: 1px solid rgba(239, 96, 121, 0.5);
   color: #2a5270;
-  background-image: url('alert-danger.png');
+  background-image: url('../alert-danger.png');
   background-repeat: no-repeat;
   background-position: 13px 50%;
 }

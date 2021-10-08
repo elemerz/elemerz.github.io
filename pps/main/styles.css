@@ -1,1 +1,337 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:initial;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:initial}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:initial}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}:root{--color-page-header:#ef6079;--color-section-head-bg:#2a5270;--color-section-head-fg:#fff;--color-subsection-head-fg:#333;--color-main-border:#d0d0d0;--color-table-header-bg:#999;--color-table-header-fg:#fff;--color-table-header-bd:#fff;--color-row-highlite:#fff1e1}@font-face{font-family:Raleway;font-style:normal;font-display:swap;font-weight:400;src:url(raleway-cyrillic-ext-400-normal.fb4e05231f89be643737.woff2) format("woff2"),url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");unicode-range:u+0460-052f,u+1c80-1c88,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-family:Raleway;font-style:normal;font-display:swap;font-weight:400;src:url(raleway-cyrillic-400-normal.cb4f2846a9e6286936a1.woff2) format("woff2"),url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");unicode-range:u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-family:Raleway;font-style:normal;font-display:swap;font-weight:400;src:url(raleway-vietnamese-400-normal.8efa7e0a2615cd431d28.woff2) format("woff2"),url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+1ea0-1ef9,u+20ab}@font-face{font-family:Raleway;font-style:normal;font-display:swap;font-weight:400;src:url(raleway-latin-ext-400-normal.0d87da54ef6ba3feba64.woff2) format("woff2"),url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-family:Raleway;font-style:normal;font-display:swap;font-weight:400;src:url(raleway-latin-400-normal.d0033942a11996c40380.woff2) format("woff2"),url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}body,html{border:0;margin:0;padding:0;height:100%;width:100%;font:400 14px/26px Raleway,sans-serif;font-style:normal;font-feature-settings:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:26px;font-family:Raleway,sans-serif;background-color:#f2f2f2}body *,html *{box-sizing:border-box}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;width:80%}@media (min-width: 768px){.container{width:750px}}@media (min-width: 992px){.container{width:970px}}@media (min-width: 1200px){.container{width:1170px}}button{cursor:pointer}button[disabled]{cursor:no-drop;opacity:.5}button.btn-action{float:right;display:inline-block;width:20px;height:20px;border:1px solid var(--color-table-header-bg);border-radius:5px;color:var(--color-section-head-fg);margin-right:5px}button.btn-action:first-child{margin-right:0}button.btn-action.btn-add{background-position:-1px -1px}button.btn-action.btn-remove{background-position:-1px -31px}button.btn-action.btn-save{background-position:0 -60px}button.btn-action.btn-back{background-position:-1px -91px}.panel{margin-bottom:20px;background-color:#fff;border-radius:15px;box-shadow:0 2px 4px #00000080;font:16px/25px Raleway,sans-serif}.notificationPanel{box-sizing:border-box;margin:90px 0 10em;text-align:left;box-shadow:none;font-size:16px!important;padding:15px 15px 15px 50px}#notificationSuccess{background-color:#00b90033;border:1px solid #00b90080;background-image:url(alert-success.e8779d9a77d9364b0f0c.png)}#notificationError,#notificationSuccess{color:#2a5270;background-repeat:no-repeat;background-position:13px 50%}#notificationError{background-color:#ef607933;border:1px solid #ef607980;background-image:url(alert-danger.d3ca11ed13a8a0dca3bd.png)}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+hr {
+    box-sizing: initial;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: initial
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: initial
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: initial
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+[hidden], template {
+    display: none
+}
+
+:root {
+    --color-page-header: #ef6079;
+    --color-section-head-bg: #2a5270;
+    --color-section-head-fg: #fff;
+    --color-subsection-head-fg: #333;
+    --color-main-border: #d0d0d0;
+    --color-table-header-bg: #999;
+    --color-table-header-fg: #fff;
+    --color-table-header-bd: #fff;
+    --color-row-highlite: #fff1e1
+}
+
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(raleway-cyrillic-ext-400-normal.fb4e05231f89be643737.woff2) format("woff2"), url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");
+    unicode-range: u+0460 -052 f, u+1 c80-1c88, u+20 b4, u+2 de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(raleway-cyrillic-400-normal.cb4f2846a9e6286936a1.woff2) format("woff2"), url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");
+    unicode-range: u+0400 -045 f, u+0490 -0491, u+04 b0-04b1, u+2116
+}
+
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(raleway-vietnamese-400-normal.8efa7e0a2615cd431d28.woff2) format("woff2"), url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");
+    unicode-range: u+0102 -0103, u+0110 -0111, u+0128 -0129, u+0168 -0169, u+01 a0-01a1, u+01 af-01b0, u+1 ea0-1ef9, u+20 ab
+}
+
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(raleway-latin-ext-400-normal.0d87da54ef6ba3feba64.woff2) format("woff2"), url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");
+    unicode-range: u+0100 -024 f, u+0259, u+1 e ? ?, u+2020, u+20 a0-20ab, u+20 ad-20cf, u+2113, u+2 c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(raleway-latin-400-normal.d0033942a11996c40380.woff2) format("woff2"), url(raleway-all-400-normal.8745d609142c140d7bdc.woff) format("woff");
+    unicode-range: u+00 ? ?, u+0131, u+0152 -0153, u+02 bb-02bc, u+02 c6, u+02 da, u+02 dc, u+2000 -206 f, u+2074, u+20 ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+body, html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font: 400 14px/26px Raleway, sans-serif;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    font-family: Raleway, sans-serif;
+    background-color: #f2f2f2
+}
+
+body *, html * {
+    box-sizing: border-box
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+button {
+    cursor: pointer
+}
+
+button[disabled] {
+    cursor: no-drop;
+    opacity: .5
+}
+
+button.btn-action {
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--color-table-header-bg);
+    border-radius: 5px;
+    color: var(--color-section-head-fg);
+    margin-right: 5px
+}
+
+button.btn-action:first-child {
+    margin-right: 0
+}
+
+button.btn-action.btn-add {
+    background-position: -1px -1px
+}
+
+button.btn-action.btn-remove {
+    background-position: -1px -31px
+}
+
+button.btn-action.btn-save {
+    background-position: 0 -60px
+}
+
+button.btn-action.btn-back {
+    background-position: -1px -91px
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px #00000080;
+    font: 16px/25px Raleway, sans-serif
+}
+
+.notificationPanel {
+    box-sizing: border-box;
+    margin: 90px 0 10em;
+    text-align: left;
+    box-shadow: none;
+    font-size: 16px !important;
+    padding: 15px 15px 15px 50px
+}
+
+#notificationSuccess {
+    background-color: #00b90033;
+    border: 1px solid #00b90080;
+    background-image: url(alert-success.png)
+}
+
+#notificationError, #notificationSuccess {
+    color: #2a5270;
+    background-repeat: no-repeat;
+    background-position: 13px 50%
+}
+
+#notificationError {
+    background-color: #ef607933;
+    border: 1px solid #ef607980;
+    background-image: url(alert-danger.png)
+}

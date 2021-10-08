@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6099907-abb2-445e-9f06-4ecc484e857e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/Patient Survey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/main.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/alert-danger.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/alert-danger.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/alert-success.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/alert-success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/info-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/info-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/infomedics_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/infomedics_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/Patient Survey_files/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/ui.totop.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/ui.totop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +123,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\jde\projects\elemerz.github.io\pps\main" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
