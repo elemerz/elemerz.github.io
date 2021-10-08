@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6099907-abb2-445e-9f06-4ecc484e857e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/Patient Survey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/alert-danger.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/alert-danger.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/alert-success.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/alert-success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/info-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/info-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/infomedics_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/infomedics_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/Patient Survey_files/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/ui.totop.png" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/ui.totop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/alert-danger.d3ca11ed13a8a0dca3bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/alert-success.e8779d9a77d9364b0f0c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/info-icon.87e9e778b59008bbe1ff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/main.6ef93c60233e0b16f837.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/polyfills.b2cdbf8ffca4f7ef841d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/raleway-all-400-normal.8745d609142c140d7bdc.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/raleway-cyrillic-400-normal.cb4f2846a9e6286936a1.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/raleway-cyrillic-ext-400-normal.fb4e05231f89be643737.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/raleway-latin-400-normal.d0033942a11996c40380.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/raleway-latin-ext-400-normal.0d87da54ef6ba3feba64.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/raleway-vietnamese-400-normal.8efa7e0a2615cd431d28.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/runtime.a6ab97a31c03758082b6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/styles.58c26f9bc12a71289d73.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/ui.totop.ea7159eca6be9f9f0297.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
