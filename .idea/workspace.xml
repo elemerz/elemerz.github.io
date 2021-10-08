@@ -7,9 +7,8 @@
     <list default="true" id="d6099907-abb2-445e-9f06-4ecc484e857e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/Patient Survey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/main.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/styles.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pps/main/Patient Survey_files/vendor.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/pps/main/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pps/main/main.js.download" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
