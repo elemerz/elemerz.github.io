@@ -1,0 +1,171 @@
+{
+  "err": {
+    "KRT_NOT_FOUND":  "De KRT enquête kan niet worden gevonden.",
+    "KRT_ALREADY_PENDING_FOR_AGB":  "Voor deze AGB: {AGB} is er al een KRT enquête actief.",
+    "KRT_CREATION_FAILED":  "Er kan geen nieuwe KRT enquête aanmaken.",
+    "KRT_UPDATE_FAILED":  "De KRT enquête kon niet worden bijgewerkt.",
+    "KRT_DELETE_FAILED": "Het is niet gelukt deze KRT enquête te verwijderen.",
+    "KRT_NOTEDITABLE_STATUS":  "Deze KRT enquête kan niet worden bewerkt.",
+    "KRT_NOTDELETABLE_STATUS": "Deze KRT enquête kan niet verwijderd worden.",
+    "KRT_REPORT_NOT_DOWNLOADABLE": "De status van het KRT enquête laat niet toe het verslag te downloaden",
+    "FIELD_INVALID_AGB":  "De AGB code is ongeldig. Gebruik een 8-cijferige code.",
+    "FIELD_INVALID_BIGREGCODE":  "De BIG code is ongeldig. Gebruik een 11-cijferige code.",
+    "FIELD_INVALID_CAREPROVNAME":  "De naam van de zorgverlener mag niet leeg zijn en mag niet langer zijn dan 40 tekens.",
+    "FIELD_INVALID_EMAILADDR":  "Het e-mail adres is ongeldig of te lang.",
+    "FIELD_INVALID_REQDRESP":  "Het aantal vereiste antwoorden moet tussen de 1 en 9999 liggen.",
+    "INTERNAL_SERVER_ERROR": "Er is een fout opgetreden. (internal server error)",
+    "NO_ACTIVE_PRACTICE": "Geen van uw praktijken heeft toegang tot de patiënt enquête. Als dit niet klopt, neem dan contact op met de uw klantexpert team.",
+    "RESPONSE_401": "Unauthorized: User does not have a valid authentication session",
+    "FORBIDDEN": "Forbidden: User does not have access to this resource",
+    "NO_ACCESS_TO_PRACTICE": "User does not have access to the requested practice"
+  },
+  "months": {
+    "01": "Januari",
+    "02": "Februari",
+    "03": "Maart",
+    "04": "April",
+    "05": "Mei",
+    "06": "Juni",
+    "07": "Juli",
+    "08": "Augustus",
+    "09": "September",
+    "10": "Oktober",
+    "11": "November",
+    "12": "December"
+  },
+
+  "pageHeader": {
+    "mniHome": "Home",
+    "mniPatientSurvey": "Patiëntenenquête",
+    "mniLogout": "Uitloggen"
+  },
+
+  "monthlyOverview": {
+    "title": "Doorlopende feedback",
+    "fltLabels": {
+      "allQuestions": "Alle vragen",
+      "allPractices": "Alle Zorgverleners"
+    },
+    "th": {
+      "periode": "Periode",
+      "practitioner": "Zorgverlener",
+      "score": "Score",
+      "responses": "Aantal antwoorden",
+      "details": "Details"
+    }
+  },
+
+  "surveyDetails": {
+    "title": "Enquêtegegevens",
+    "fltLabels": {
+      "allPractices": "Alle Zorgverleners"
+    },
+    "th": {
+      "question": "Vraag",
+      "answers": "Aantal antwoorden",
+      "score": "Score",
+      "details": "Open antwoorden"
+    }
+  },
+
+  "detailsPerQuestion": {
+    "title": "Overzicht antwoorden",
+    "fltLabels": {
+      "allPractices": "Alle Zorgverleners",
+      "krtLabel": "KRT enquête {{startDate}} voor {{agb}} - {{name}}"
+    },
+    "list": {
+      "th": {
+        "date": "Datum",
+        "practitioner": "Zorgverlener",
+        "patient": "Patiënt",
+        "score": "Score",
+        "explanation": "Uitleg"
+      },
+      "lbl": {
+        "anonim": "Anoniem"
+      }
+    }
+  },
+
+  "cycleDetailsView": {
+    "title": "Cyclusgegevens van {{type}} {{nr}}: {{start}} - {{end}}",
+    "goalsTitle": "Doelstelling"
+  },
+  "krtOverview": {
+    "title": "KRT enquête Overzicht",
+    "gotoDetails": "Details",
+    "startReport": "Nieuw KRT-rapport starten",
+    "downloadReport": "Rapport downloaden",
+    "th": {
+      "agb": "Zorgverlener",
+      "practitionerName": "Naam",
+      "startDate": "Startdatum",
+      "requiredResponses": "Minimum aantal antwoorden",
+      "receivedResponses": "Ontvangen antwoorden",
+      "status": "Status",
+      "actions": ""
+    },
+    "status": {
+      "1CRE": "Nieuw",
+      "2EML": "Nieuw",
+      "2EMF": "Nieuw",
+      "3ACC": "Nieuw",
+      "4ACT": "Actief",
+      "5STP": "Gestopt",
+      "6SUB": "Ingediend",
+      "7SUF": "Indienen mislukt",
+      "FIN": "Afgerond"
+    },
+    "msg": {
+      "confirmKrtDeletion": "Weet u zeker dat u deze KRT enquête wilt verwijderen?",
+      "deleteKrtSuccessful": "KRT enquête verwijderd.",
+      "deleteKrtFailed": "Het verwijderen van de KRT enquête is mislukt."
+    }
+  },
+  "krtInputForm": {
+    "title": "KRT enquête {{startDate}} voor {{agb}} - {{name}}",
+    "startKrtRun": "Start KRT enquête",
+    "lbl": {
+      "agb": "AGB-code zorgverlener",
+      "bigCode": "BIG-code zorgverlener",
+      "practitionerName": "Naam zorgverlener",
+      "email": "E-mail adres zorgverlener",
+      "requiredResponses": "Minimum aantal antwoorden"
+    },
+    "vld": {
+      "agb": "De AGB-code is verplicht en moet uit 8 cijfers bestaan.",
+      "bigCode": "Big code is verplicht en moet uit 9 tot 11 cijfers bestaan.",
+      "practitionerName": "De naam van de zorgverlener moet tussen de 1 en 40 karakters lang zijn.",
+      "email": "Ongeldige e-mail.",
+      "requiredResponses": "Het minimum aantal antwoorden moet tussen 1 en 9999 liggen."
+    },
+    "msg": {
+      "createKrtSuccess": "KRT enquête succesvol aangemaakt.",
+      "updateKrtSuccess": "{{value}} opgeslagen."
+    }
+  },
+  "krtRunDetails": {
+    "gotoAnswers": "Open antwoorden",
+    "downloadReport": "Rapport downloaden",
+    "lbl": {
+      "practitionerReflection": "Reflectie van de zorgverlener",
+      "generalImpression": "Algemene indruk",
+      "strongPoints": "Sterke punten",
+      "possibleImprovements": "Mogelijke verbeteringen",
+      "possibleImprovementsFromOthers": "Mogelijke verbeteringen (van anderen)",
+      "actions": "Acties",
+      "action": "Actie {{rank}}:",
+      "questionPrefix": "Vraag: {{rank}} - "
+    },
+    "th": {
+      "topic": "Onderwerp/Vraag",
+      "answers": "Antwoorden",
+      "score": "Score",
+      "scoreSelf": "Eigen inschatting",
+      "scoreDiff": "Verschil",
+      "benchmark": "Benchmark",
+      "actions": ""
+    }
+  }
+}
