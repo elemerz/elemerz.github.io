@@ -1,9 +1,23 @@
+/**https://www.html-code-generator.com/demo/css/speech-bubble*/
+/**Generic Colors*/
 :root {
     --clr-deep-blue: #2A5270;
     --clr-light-blue:#41b6e6;
 }
-.bubble {
+
+/**Tip and tipped definitions**/
+/*
+.tipped:focus+.tip {
+    display: flex;
+}
+*/
+.tipped-explanation {
+    display: none;
+}
+#tip {
     position: absolute;
+    top:0;
+    left:0;
     display:none; /*flex*/
     border-radius: .5rem;
     background-color: var(--clr-deep-blue);
@@ -11,7 +25,7 @@
     padding: 0;
 }
 
-.bubble:after {
+#tip:after {
     content: '';
     position: absolute;
     border-style: solid;
@@ -24,19 +38,25 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
-.bubble>table>caption {
+#tip>table>caption {
     border-radius: .5rem .5rem 0 0;
     padding: .5rem;
     color: #fff;
     font-weight: bold;
     background: var(--clr-light-blue);
 }
-.btn-tipped {
-    position: absolute;
-    top:30%;
-    left: 50%;
-    transform: translate(-50%,0);
+/**Table styling*/
+.tbl {
+    position:relative;
+    top:200px;
+    border: 1px solid black;
+    margin: 0 auto;
 }
-.btn-tipped:focus+.bubble {
-    display: flex;
+.tbl td {
+    padding: .5rem;
+}
+.tbl .tipped {
+    padding:.25rem;
+    border: 1px solid #bbb;
+    border-radius: .5rem;
 }
