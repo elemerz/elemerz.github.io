@@ -4,27 +4,23 @@
     --clr-deep-blue: #2A5270;
     --clr-light-blue:#41b6e6;
 }
-
-/**Tip and tipped definitions**/
-/*
-.tipped:focus+.tip {
-    display: flex;
-}
-*/
+/** An explanation belonging to a tooltipped (a.k.a: "tipped") table cell */
 .tipped-explanation {
     display: none;
 }
+/** Shared singleton ToolTip styling **/
 #tip {
     position: absolute;
     top:0;
     left:0;
-    display:none; /*flex*/
+    display:none; /*When showing from JS=> switch to: display: flex*/
+    max-width: 400px; /*ToolTip should not grow wider than this...*/
     border-radius: .5rem;
     background-color: var(--clr-deep-blue);
     color: white;
     padding: 0;
 }
-
+/**Tooltip's Down Arrow*/
 #tip:after {
     content: '';
     position: absolute;
@@ -38,14 +34,30 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
-#tip>table>caption {
+/**Title of the tooltip*/
+#tip > table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#tip > table > caption {
     border-radius: .5rem .5rem 0 0;
     padding: .5rem;
     color: #fff;
     font-weight: bold;
     background: var(--clr-light-blue);
 }
-/**Table styling*/
+#tip > table td {
+    padding: .5rem;
+    border-bottom: 1px solid #fff;
+}
+#tip > table td:nth-child(1) {
+    width: 120px;
+}
+#tip > table tr:last-child td {
+    border-bottom: none;
+}
+
+/**Demo Table styling*/
 .tbl {
     position:relative;
     top:200px;
@@ -59,4 +71,6 @@
     padding:.25rem;
     border: 1px solid #bbb;
     border-radius: .5rem;
+    background-color:#dfdfdf;
+    cursor: pointer;
 }
