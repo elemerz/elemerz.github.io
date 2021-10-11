@@ -466,6 +466,30 @@ body * {
   #patientSurveyDetails section {
     padding: 0.75rem !important;
   }
+  #patientSurveyDetails .radio-inline {
+    display: block !important;
+  }
+  #patientSurveyDetails .question .textArea label {
+    padding-right: 0;
+  }
+  #patientSurveyDetails .question .textArea textarea {
+    width: 100%;
+  }
+  #patientSurveyDetails .tooltip {
+    display: block !important;
+  }
+  #patientSurveyDetails .tooltip .tooltiptext {
+    position: absolute !important;
+    margin: 0 !important;
+    bottom: 0;
+    left: 0 !important;
+  }
+  #patientSurveyDetails .pageBottom button {
+    margin: 0 !important;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 /*** End of Handheld devices ***/
