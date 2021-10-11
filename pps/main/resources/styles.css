@@ -452,28 +452,16 @@ body * {
   width: 80%;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 /*** Handheld devices (mobile readiness) ***/
-@media handheld {
+@media (max-device-width: 10in) {
     .container {
         width: 100%;
-        margin:.25rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #patientSurveyDetails {
+        margin: .5rem auto !important;
     }
 }
 /*** End of Handheld devices ***/
