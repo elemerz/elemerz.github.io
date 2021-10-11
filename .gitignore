@@ -1,2 +1,5 @@
 .idea
 .idea/**/*
+/java/file-reader/.settings/**
+/java/file-reader/.classpath
+/java/file-reader/.classpath

@@ -469,6 +469,14 @@ body * {
     width: 1170px;
   }
 }
+/*** Handheld devices (mobile readiness) ***/
+@media handheld {
+    .container {
+        width: 100%;
+        margin:.25rem;
+    }
+}
+/*** End of Handheld devices ***/
 
 button {
   cursor: pointer;
