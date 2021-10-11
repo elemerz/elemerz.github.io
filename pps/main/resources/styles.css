@@ -463,6 +463,9 @@ body * {
     #patientSurveyDetails {
         margin: .5rem auto !important;
     }
+    #patientSurveyDetails section {
+        padding: .75rem !important;
+    }
 }
 /*** End of Handheld devices ***/
 
