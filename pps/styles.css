@@ -452,23 +452,23 @@ body * {
   width: 80%;
 }
 
-@media (min-width: 768px) {
+/*** Handheld devices (mobile readiness) ***/
+
+@media (max-device-width: 10in) {
   .container {
-    width: 750px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #patientSurveyDetails {
+    margin: 0.5rem auto !important;
+  }
+  #patientSurveyDetails section {
+    padding: 0.75rem !important;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
+/*** End of Handheld devices ***/
 
 button {
   cursor: pointer;
