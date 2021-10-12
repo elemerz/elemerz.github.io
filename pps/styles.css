@@ -455,7 +455,7 @@ body * {
 /*** Handheld devices (mobile readiness) ***/
 
 @media (max-device-width: 10in) {
-    body {overflow-x: hidden;}
+    html, body, .container {overflow-x: hidden;}
     .container {
         width: calc(100% - 2rem);
         margin: 0 1rem;
