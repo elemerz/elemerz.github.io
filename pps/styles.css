@@ -455,45 +455,55 @@ body * {
 /*** Handheld devices (mobile readiness) ***/
 
 @media (max-device-width: 10in) {
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  #patientSurveyDetails {
-    margin: 0.5rem auto !important;
-  }
-  #patientSurveyDetails section {
-    padding: 0.75rem !important;
-  }
-  #patientSurveyDetails .radio-inline {
-    display: block !important;
-  }
-  #patientSurveyDetails .question .textArea label {
-    padding-right: 0;
-  }
-  #patientSurveyDetails .question .textArea textarea {
-    width: 100%;
-  }
-  #patientSurveyDetails .tooltip {
-    display: block !important;
-  }
-  #patientSurveyDetails .tooltip .tooltiptext {
-    position: absolute !important;
-    margin: 0 !important;
-    bottom: 0;
-    left: 0 !important;
-  }
-  #patientSurveyDetails .pageBottom button {
-    margin: 0 !important;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  .footerLogo {
-    left: 1rem;
-  }
+    .container {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    #patientSurveyDetails {
+        margin: 0.5rem auto !important;
+    }
+
+    #patientSurveyDetails section {
+        padding: 0.75rem !important;
+    }
+
+    #patientSurveyDetails .radio-inline {
+        display: block !important;
+    }
+
+    #patientSurveyDetails .question .textArea label {
+        padding-right: 0;
+    }
+
+    #patientSurveyDetails .question .textArea textarea {
+        width: 100%;
+    }
+
+    #patientSurveyDetails .tooltip {
+        display: block !important;
+    }
+
+    #patientSurveyDetails .tooltip .tooltiptext {
+        position: absolute !important;
+        margin: 0 !important;
+        bottom: 0;
+        left: 0 !important;
+    }
+
+    #patientSurveyDetails .pageBottom button {
+        margin: 0 !important;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .footerLogo {
+        left: 1rem;
+    }
 }
+
 /*** End of Handheld devices ***/
 
 button {
