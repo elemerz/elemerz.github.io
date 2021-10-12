@@ -472,8 +472,11 @@ body * {
 
     #patientSurveyDetails .radio-inline {
         display: block !important;
+        margin: .25rem 0 0 0 !important;
     }
-
+    #patientSurveyDetails .radio-inline:first-child {
+        margin: 0 !important;
+    }
     #patientSurveyDetails .question .textArea label {
         padding-right: 0;
     }
