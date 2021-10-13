@@ -1,20 +1,20 @@
 package nl.infomedics.pps.filereader;
 
-import java.util.Properties;
-import java.util.Base64;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URLEncoder;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.InvalidKeyException;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.URI;
-import java.net.URLEncoder;
-import java.io.UnsupportedEncodingException;
-import java.io.IOException;
+import java.util.Base64;
+import java.util.Properties;
 
 public class FileSender {
 	private static Properties props = new Properties();
