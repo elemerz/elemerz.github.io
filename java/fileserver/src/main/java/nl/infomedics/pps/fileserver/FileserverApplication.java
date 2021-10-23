@@ -9,5 +9,4 @@ public class FileserverApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FileserverApplication.class, args);
 	}
-
 }
