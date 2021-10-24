@@ -1,13 +1,9 @@
 package nl.infomedics.pps.filereader;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+import javax.net.ssl.*;
+import java.io.*;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.net.http.HttpClient;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,16 +12,9 @@ import java.security.GeneralSecurityException;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 import java.util.Properties;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
 
 public class FileSender {
-	private static Properties props = new Properties();
-
+	private static final Properties props = new Properties();
 	public static void main(String[] args) {
 		try {
 			props.load(new FileInputStream("./file-reader.properties"));
@@ -34,42 +23,38 @@ public class FileSender {
 			//
 			System.out.println("FileReader: server.url= " + serverUrl);
 			System.out.println("FileReader: import.folder= " + importFolder);
-			HttpClient client = HttpClient.newHttpClient();
-			scanPatientsImportFolderAndSend(client, importFolder, serverUrl);
+			scanPatientsImportFolderAndSend(importFolder, serverUrl);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	private static void scanPatientsImportFolderAndSend(final HttpClient client, final String scanDir, final String url) throws IOException {
+	private static void scanPatientsImportFolderAndSend(final String scanDir, final String url) throws IOException {
 		int csvFilesFound = 0;
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(scanDir))) {
 			for (Path path : stream) {
 				final String fileName = path.getFileName().toString();
 				if (!Files.isDirectory(path) && fileName.endsWith(".csv")) {
 					csvFilesFound++;
-					sendFileBytesSSL(client, fileName, Files.readAllBytes(path), url);
+					sendFileBytesSSL(fileName, Files.readAllBytes(path), url);
 				}
 			}
 		}
 		System.out.println(csvFilesFound > 0 ? csvFilesFound + " files have been sent." : "No CSV files to send. Did nothing.");
 	}
 
-	private static String appendFileNameAsParam(final String url, final String fileName)
-			throws UnsupportedEncodingException {
-		return url + "?fileName=" + URLEncoder.encode(fileName, "UTF-8");
+	private static String appendFileNameAsParam(final String url, final String fileName) throws UnsupportedEncodingException {
+		return url + "?fileName=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8);
 	}
 
-	private static void sendFileBytesSSL(final HttpClient client, final String fileName, final byte[] fileBytes, String url) {
+	private static void sendFileBytesSSL(final String fileName, final byte[] fileBytes, String url) {
 		System.out.println("sendFileBytesSSL: Setting up SSL connection...");
 		TrustManager[] trustAllCertificates = new TrustManager[] { new X509TrustManager() {
 			@Override public X509Certificate[] getAcceptedIssuers() {return null; /*Not relevant.*/}
 			@Override public void checkClientTrusted(X509Certificate[] certs, String authType) {/*Do nothing. Just allow them all.*/}
 			@Override public void checkServerTrusted(X509Certificate[] certs, String authType) {/*Do nothing. Just allow them all.*/}
 		} };
-		HostnameVerifier trustAllHostnames = new HostnameVerifier() {
-			@Override public boolean verify(String hostname, SSLSession session) {return true; /*Just allow them all.*/}
-		};
+		HostnameVerifier trustAllHostnames = (hostname, session) -> {return true; /*Just allow them all.*/};
 		try {
 			System.setProperty("jsse.enableSNIExtension", "false");
 	        SSLContext sc = SSLContext.getInstance("SSL");
@@ -97,9 +82,7 @@ public class FileSender {
 		        final byte[] errorBytes = errorStream.readAllBytes();
 				System.err.println("sendFileBytesSSL: Error: " + statusCode + "\n\t" + new String(errorBytes));
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (GeneralSecurityException e) {
+		} catch (IOException | GeneralSecurityException e) {
 			e.printStackTrace();
 		}
 	}

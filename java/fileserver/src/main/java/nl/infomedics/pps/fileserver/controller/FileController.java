@@ -1,6 +1,5 @@
 package nl.infomedics.pps.fileserver.controller;
 
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
@@ -25,12 +24,11 @@ public class FileController {
 			fileName = URLDecoder.decode(fileNameUrlEnc, "UTF-8");
 			String[] fileLines = new String(fileBytes).split("\r\n");
 			for(int i= 0; i< fileLines.length; i++) {
-				Thread.sleep(1);
 				System.out.println("fileLines[" + i + "]");
 			}
-		} catch (UnsupportedEncodingException | InterruptedException e) {
+		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
-		return ("PPS Received file: " + fileName + ". File size: " + fileBytes.length + "\n\nToken isValid = ").getBytes();
+		return ("PPS Received file: " + fileName + ". File size: " + fileBytes.length).getBytes();
 	}
 }
