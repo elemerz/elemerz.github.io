@@ -22,3 +22,15 @@ window.addEventListener('load', ()=> {
         });
     });
 });
+
+/**
+ * Write a function that takes an integer argument, and returns an array containing that many random human names from a web service.
+ * The names should be formatted as "Firstname Lastname".
+ */
+
+function getRandomHumanNames(num) {
+    const url = `https://randomuser.me/api/?results=${num}`;
+    return fetch(url)
+        .then(res => res.json())
+        .then(res => res.results.map(human => `${human.name.first} ${human.name.last}`));
+}
