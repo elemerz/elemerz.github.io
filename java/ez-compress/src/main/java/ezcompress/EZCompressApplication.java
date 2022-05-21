@@ -1,3 +1,8 @@
+/**Taken from Kanzi: https://github.com/flanglet/kanzi
+ * TODO: Transpile to Typescript: https://github.com/lgrignon/jsweet-maven-plugin
+ * Renaud Pawlak's jsweet-quickstart
+ * */
+
 package ezcompress;
 
 import java.io.BufferedInputStream;
