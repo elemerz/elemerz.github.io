@@ -1,6 +1,15 @@
+/*** Generic HTMl Styles, independent from DataList Component***/
+html * {box-sizing: border-box;}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: .5em;
+}
 fieldset {
     border: 1px solid blue;
-    width: 360px;
     border-radius: 5px;
 }
 
@@ -10,40 +19,47 @@ legend, label {
     font-family: sans-serif;
 }
 
+/*** DataList component's Styling ***/
+/*The input-box part of the Editable Datalist*/
+#matchesLabel {
+    display: none;
+}
 input {
-    font-size: 18px;
-    padding: 5px;
+    display: inline-block;
     height: 35px;
-    width: 350px;
+    width: 100%;
+    font-size: 18px;
+    padding: .25em .5em;
     border: 1px solid blue;
     outline: none;
-    border-radius: 5px;
+    border-radius: .5rem;
     color: blue;
 }
-
+/*The drop-down part*/
 datalist {
     position: absolute;
+    display: block;
+    width: calc(100% - 2.9em); /*Experimental width*/
     background-color: white;
     border: 1px solid blue;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 .5em .5em; /*Straight on top, without border*/
     border-top: none;
     font-family: sans-serif;
-    width: 350px;
-    padding: 5px;
-    max-height: 10rem;
+    padding: 0;
+    max-height: 17em; /* Approx 10 visible lines*/
     overflow-y: auto
-
 }
-
+/*An Option in the Drop-Down*/
 option {
     background-color: white;
-    padding: 4px;
+    padding: .25em .5em;
     color: blue;
     margin-bottom: 1px;
-    font-size: 18px;
+    font-size: 1em;
+    line-height: 1em;
     cursor: pointer;
 }
-
+/*Distinguish hovered/focused items*/
 option:hover, option:focus {
     background-color: lightblue;
 }

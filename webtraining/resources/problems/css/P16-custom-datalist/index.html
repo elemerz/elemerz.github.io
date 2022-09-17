@@ -1,47 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Custom Datalist</title>
-    <link rel="stylesheet" href="datalist.css">
-    <script type="application/javascript" src="datalist.js"></script>
-</head>
-<body>
-<html lang="en">
-<body>
-<fieldset>
-    <legend>Datalist Form</legend>
-    <label>Select Browser</label>
-    <input autocomplete="off" role="combobox" list="" id="input" name="browsers" placeholder="Select your fav browser">
-    <!-- Its important that you keep list attribute empty to hide the default dropdown icon and the browser's default datalist -->
-
-    <datalist id="datalist" role="listbox">
-        <option tabindex="0" value="Internet Explorer">Internet Explorer</option>
-        <option tabindex="0" value="Chrome">Chrome</option>
-        <option tabindex="0" value="Safari">Safari</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-        <option tabindex="0" value="Microsoft Edge">Microsoft Edge</option>
-        <option tabindex="0" value="Firefox">Firefox</option>
-    </datalist>
-</fieldset>
-</body>
-</html>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Custom Datalist For packages</title>
+        <link rel="stylesheet" href="datalist.css">
+        <script type="module" src="datalist.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Select a Package</legend>
+            <label id="matchesLabel">Matches found (<b id="matchCount"></b>)</label>
+            <label id="selectionLabel">Selected package</label>
+            <input autocomplete="off" role="combobox" id="input" tabindex="0" placeholder="Select an insurance package">
+            <datalist id="datalist" role="listbox" tabindex="-1">
+        <!--
+                <option tabindex="0" value="PackRef-A">NullEgyNullEgy-Unive</option>
+                <option tabindex="0" value="PackRef-B">GereGer-Bé</option>
+                <option tabindex="0" value="PackRef-C">KilencHatHatNégy</option>
+        -->
+            </datalist>
+        </fieldset>
+    </body>
 </html>
