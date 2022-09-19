@@ -23,6 +23,7 @@ function setupDataList() {
         }
         return a.join('');
     };
+
     /*** Generates the special option: "No Matches found" ***/
     const noMatchesHtmlOptions = () => {
         return `<option tabindex="-1" value="${LONG_DASH}">No Matches Found</option>`;
@@ -35,10 +36,12 @@ function setupDataList() {
     const focusOption = (option) => {
         option.focus();
     };
+
     const insertAtCaretPos = (newText, el = document.activeElement) => {
         const [start, end] = [el.selectionStart, el.selectionEnd];
         el.setRangeText(newText, start, end, 'end');
     }
+
     /*** Event Handlers ***/
     const showList = () => {
         datalist.style.display = 'block';
@@ -73,7 +76,7 @@ function setupDataList() {
 
     /**Overtakes the option's value, closes the list, and applies a filter to the selected option*/
     const selectOption = (option) => {
-        if(option.value === LONG_DASH) {return;}
+        if(option.value === LONG_DASH) {return;} /*For empty option ==> don't do nothing*/
         input.value = option.text;
         hideList();
         input.focus();
@@ -165,9 +168,9 @@ function setupDataList() {
     datalist.onkeydown = dataListKeyHandler;
     datalist.onclick = optionClick;
 
-    /*** Load some data: 100, 500, 1500, 2800- long JSON data available***/
+    /*** Load some data: Max 2800- long JSON data available***/
     fetch('./data/2800.json').then((response) => response.json()).then((json) => {
-        mdl = json;
+        mdl = json.slice(0, 1800);
         filterList(false)();
         hideList();
         input.focus();
