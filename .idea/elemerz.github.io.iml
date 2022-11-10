@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bowser" level="application" />
+    <orderEntry type="library" name="browsengine" level="application" />
   </component>
 </module>
