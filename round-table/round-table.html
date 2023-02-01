@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rounded Border on table</title>
+    <style>
+        :root {
+            --deep-blue: #2a5270;
+            --border: 1px solid #2a5270;
+        }
+        table.round {
+            border-radius: 6px;
+            border-spacing: 0;
+            border-collapse: separate;
+            border: var(--border);
+            overflow: hidden;
+        }
+        table.round th, table.round td {
+          padding: 4px;
+        }
+        /* Apply a border to the right of all but the last column */
+        table.round th:not(:last-child),
+        table.round td:not(:last-child) {
+            border-right: var(--border);
+        }
+
+        /* Apply a border to the bottom of all but the last row */
+        table.round tr:not(:last-child) > td,
+        table.round tr:not(:last-child) > th {
+            border-bottom: var(--border);
+        }
+        table.round .caption{
+            color: white;
+            background-color: var(--deep-blue);
+            padding: 5px 10px;
+            border-radius: 5px 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<table class="round">
+    <thead><td colspan="3" class="caption">This is the Table's caption</td></thead>
+    <tbody>
+    <tr><th>Name</th><th>Department</th><th>Office</th></tr>
+    <tr><td>John</td><td>Admin</td><td>North</td></tr>
+    <tr><td>Smith</td><td>Logistics</td><td>South</td></tr>
+    <tr><td>David</td><td>Transport</td><td>East</td></tr>
+    </tbody>
+</table>
+</body>
+</html>
