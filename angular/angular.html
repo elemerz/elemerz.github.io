@@ -3,9 +3,12 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Angular 7 material</title>
+    <title>Angular 16 material</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../common/css/common.css"/>
+    <link rel="stylesheet" href="../common/css/3rdparty/highlight/highlight.min.css">
+    <script src="../common/js/3rdparty/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
 <ul class="main">
@@ -29,6 +32,21 @@
                     <li><a target="_blank" href="https://material.angular.io/">Angular's Component framework: Angular Material</a></li>
                     <li><a target="_blank" href="https://www.tutorialspoint.com/angular_material/index.htm">Angular Material Tutorial</a></li>
                     <li><a target="_blank" href="https://github.com/angular/flex-layout">Angular Flex-Layout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><span>Angular recipes</span>
+        <ul><li><span>Mocking missing Backends</span>
+                <ul>
+                    <li><a target="_blank" href="https://www.techiediaries.com/angular-inmemory-web-api/#:~:text=The%20angular%2Din%2Dmemory%2D,data%20store%20that%20you%20control.">Angular 15 In-memory Web API</a></li>
+                    <li><a target="_blank" href="#local-mock-with-observable">Mock with Observable.of...</a></li>
+                </ul>
+            </li>
+            <li><span>Multi-module Angular</span>
+                <ul>
+                    <li><a target="_blank" href="https://blog.angular-university.io/angular2-ngmodule/">Angular University: Angular Modules and NgModule - Complete Guide</a></li>
+                    <li><a target="_blank" href="https://stackblitz.com/angular/qyjoaekpapo?file=src%2Fapp%2Fitems%2Fitems.module.ts">Angular Multi-Modules app example</a></li>
                 </ul>
             </li>
         </ul>
@@ -88,7 +106,21 @@ Add Lombok dependency to POM.xml
     </li>
 
 </ul>
+<pre id="local-mock-with-observable"><code class="language-typescript">
+//noinspection TypeScriptUnresolvedVariable
+// Angular + Typescript
+import "rxjs-compat/add/observable/of";
+import {delay, from, Observable} from 'rxjs';
 
+interface Person {
+  firstName: string;
+  lastName: string;
+}
+
+mockSomeData(): Observable<Person[]> {
+  return Observable.of([{firstName:'Zágoni', lastName: 'Eli'},{firstName:'Bíró', lastName: 'Dani'}).pipe(delay(1000));
+}
+</code></pre>
 <script src="../common/js/3rdparty/jquery/jquery-3.3.1.min.js"></script>
 <script src="../common/js/common.js"></script>
 </body>

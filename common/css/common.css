@@ -55,3 +55,7 @@ ul.main li>span{
 ul > li{
     margin-top:.5em;
 }
+
+pre[id^="local-"] {
+    display: none;
+}
