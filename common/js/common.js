@@ -1,14 +1,7 @@
-(function($){
-    'use strict';
-    /*onLoad*/
-    $(function(){
-        $(document)
-            .on("click", "ul.main li>span", WT.expandCollapseNode)
-            .on("click", "ul.main > .expand-all", WT.expandCollapseAll)
-            .on("click", "a[href^=\"#local-\"]", WT.displayLocalCodeSnippet);
-    });
+//import hljs from "./3rdparty/highlight/highlight.min";
 
-    var WT={
+(function($){
+    const WT={
         expandCollapseNode: function(){
             $(this).find("+ul").slideToggle();
         },
@@ -17,22 +10,28 @@
             $("li > ul")[$(this).is(".expanded") ? "show" : "hide"]();
         },
         displayLocalCodeSnippet: function(evt){
-            console.log(evt.currentTarget.href);
-            var hashIdx = evt.currentTarget.href.lastIndexOf("#");
-            if (hashIdx !== -1) {
-                var targetId = evt.currentTarget.href.substr(hashIdx + 1);
-                var $target = $("#" + targetId);
-                if ($target.length) {
-                    const isHidden = $target.is(":hidden");
-                    $('pre[id^="local-"]').hide();
-                    if (isHidden) {
-                        $target.show();
-                    } else {
-                        $target.hide();
-                    }
-                }
-            }
+            const el = evt.currentTarget;
+            const file = el.href.substring(el.href.indexOf("#") + 1);
+            fetch(file).then((x) => x.text()).then((sourceCode) => {
+                const hlt = hljs.highlight(sourceCode, {language: el.lang}).value;
+                $(`<pre id=\"localContent\" tabindex="1"><code class=\"language-${el.lang}\">${hlt}</code></pre>`)
+                    .on("keydown", (evt) => {
+                        if (evt.keyCode === 27) {
+                            $("#localContent").remove();
+                        }
+                    }).appendTo("body").show().focus();
+            });
             return false
         }
     };
+
+    'use strict';
+    /*onLoad*/
+    $(function(){
+        $(document)
+            .on("click", "ul.main li>span", WT.expandCollapseNode)
+            .on("click", "ul.main > .expand-all", WT.expandCollapseAll)
+            .on("click", "a[href^=\"#local/\"]", WT.displayLocalCodeSnippet);
+    });
+
 }(jQuery))

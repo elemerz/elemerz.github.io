@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../common/css/common.css"/>
     <link rel="stylesheet" href="../common/css/3rdparty/highlight/highlight.min.css">
     <script src="../common/js/3rdparty/highlight/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
 </head>
 <body>
 <ul class="main">
@@ -40,7 +39,7 @@
         <ul><li><span>Mocking missing Backends</span>
                 <ul>
                     <li><a target="_blank" href="https://www.techiediaries.com/angular-inmemory-web-api/#:~:text=The%20angular%2Din%2Dmemory%2D,data%20store%20that%20you%20control.">Angular 15 In-memory Web API</a></li>
-                    <li><a target="_blank" href="#local-mock-with-observable">Mock with Observable.of...</a></li>
+                    <li><a target="_blank" href="#local/mock-with-observable/mock-with-observable.ts" lang="typescript">Mock with Observable.of...</a></li>
                 </ul>
             </li>
             <li><span>Multi-module Angular</span>
@@ -106,22 +105,7 @@ Add Lombok dependency to POM.xml
     </li>
 
 </ul>
-<pre id="local-mock-with-observable"><code class="language-typescript">
-//noinspection TypeScriptUnresolvedVariable
-// Angular + Typescript
-import "rxjs-compat/add/observable/of";
-import {delay, from, Observable} from 'rxjs';
-
-interface Person {
-  firstName: string;
-  lastName: string;
-}
-
-mockSomeData(): Observable<Person[]> {
-  return Observable.of([{firstName:'Zágoni', lastName: 'Eli'},{firstName:'Bíró', lastName: 'Dani'}).pipe(delay(1000));
-}
-</code></pre>
-<script src="../common/js/3rdparty/jquery/jquery-3.3.1.min.js"></script>
+<script src="../common/js/3rdparty/jquery/jquery-3.7.0.min.js"></script>
 <script src="../common/js/common.js"></script>
 </body>
 </html>
