@@ -10,14 +10,14 @@
             $("li > ul")[$(this).is(".expanded") ? "show" : "hide"]();
         },
         displayLocalCodeSnippet: function(evt){
-            const el = evt.currentTarget;
-            const file = el.href.substring(el.href.indexOf("#") + 1);
+            const link = evt.currentTarget;
+            const file = link.href.substring(link.href.indexOf("#") + 1);
             fetch(file).then((x) => x.text()).then((sourceCode) => {
-                const hlt = hljs.highlight(sourceCode, {language: el.lang}).value;
-                $(`<pre id=\"localContent\" tabindex="1"><code class=\"language-${el.lang}\">${hlt}</code></pre>`)
-                    .on("keydown", (evt) => {
-                        if (evt.keyCode === 27) {
-                            $("#localContent").remove();
+                const hlt = hljs.highlight(sourceCode, {language: link.lang}).value;
+                $(`<pre id=\"localContent\" tabindex="1"><code class=\"language-${link.lang}\">${hlt}</code></pre>`)
+                    .on("keydown", (keyEvent) => {
+                        if (keyEvent.keyCode === 27) {
+                            keyEvent.currentTarget.remove();
                         }
                     }).appendTo("body").show().focus();
             });
