@@ -1,0 +1,44 @@
+:root {
+    --color-deep-blue: #2a5270;
+}
+dl.tab-strip {
+    position: relative;
+    display: flex;
+}
+dl > dd {
+    display: none;
+    position:absolute;
+    top: 35px;
+    left:0;
+    margin:0;
+}
+dl > dt {
+    display: inline-block;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+    padding: 0.5em;
+    width: 200px;
+    text-align: center;
+    margin: 0;
+    border: 1px solid var(--color-deep-blue);
+    border-bottom: none;
+    border-radius: 0.25em 0.25em 0 0;
+    color: var(--color-deep-blue);
+    background-color: #fff;
+    cursor: pointer;
+}
+dl > dt.active {
+    color: #fff;
+    background-color: var(--color-deep-blue);
+    cursor: default;
+    transform: scale(1.05);
+    margin: 0 .35em;
+}
+dl > dt.active + dd {
+    display: block;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0 0 0.5em 0.5em;
+    background-color: #fff;
+    box-shadow: 0 0 0.5em #ccc;
+}
