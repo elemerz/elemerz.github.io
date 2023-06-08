@@ -1,0 +1,22 @@
+.draggable {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: #fff;
+}
+.draggable .handle {
+    cursor: move;
+    color: #fff;
+    background-color: #2a5270;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10px;
+}
+.draggable .content {
+    padding: 10px;
+}

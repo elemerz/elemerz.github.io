@@ -6,6 +6,7 @@ Eli's Github pages:
 - My Stuff
   - ![TipButton](my-stuff/tip-button/favicon-16x16.png)[EZ Tooltip](my-stuff/tip-button/index.html)
   - ![CustomDialog](my-stuff/custom-dialog/favicon-16x16.png)[Custom Dialog](my-stuff/custom-dialog/dialog.html)
+  - ![Draggable](my-stuff/draggable/favicon-16x16.png)[Drag By Handle](my-stuff/draggable/draggable.html)
   - ![SpeechBubble](my-stuff/speech-bubble/favicon-16x16.png)[SpeechBubble](my-stuff/speech-bubble/index.html)
   - ![RoundTable](my-stuff/round-table/favicon-16x16.png)[RoundTable](my-stuff/round-table/index.html)
   - ![ImageAsTable](my-stuff/img-as-table/favicon-16x16.png)[ImageAsTable](my-stuff/img-as-table/index.html)
