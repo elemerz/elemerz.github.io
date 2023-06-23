@@ -8,6 +8,7 @@ Eli's Github pages:
   - ![CustomDialog](my-stuff/custom-dialog/favicon-16x16.png)[Custom Dialog](my-stuff/custom-dialog/dialog.html)
   - ![Draggable](my-stuff/draggable/favicon-16x16.png)[Drag By Handle](my-stuff/draggable/draggable.html)
   - ![SpeechBubble](my-stuff/speech-bubble/favicon-16x16.png)[SpeechBubble](my-stuff/speech-bubble/index.html)
+  - ![BackgroundColorizer](my-stuff/background-colorizer/favicon-16x16.png)[BackgroundColorizer](my-stuff/background-colorizer/index.html)
   - ![RoundTable](my-stuff/round-table/favicon-16x16.png)[RoundTable](my-stuff/round-table/index.html)
   - ![ImageAsTable](my-stuff/img-as-table/favicon-16x16.png)[ImageAsTable](my-stuff/img-as-table/index.html)
   - ![GithubCopilot](my-stuff/copilot/favicon-16x16.png)[GithubCopilot](my-stuff/copilot/index.html)

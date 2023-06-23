@@ -1,0 +1,21 @@
+#bg {
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+}
+input[type="range"] {
+    position: relative;
+    margin-bottom: 3em;
+}
+input[type="range"]:after {
+    content: attr(value);
+    border-style: inset;
+    border-radius: 5px;
+    padding: .25em .35em;
+    background-color: #ccc;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 20px);
+}
