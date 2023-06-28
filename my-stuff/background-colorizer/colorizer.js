@@ -1,12 +1,10 @@
 const CLRZ= {
-    red: 0, green: 0, blue: 0,
+    red: 240, green: 64, blue: 32,
     init: () => {
-        CLRZ.red = parseInt(document.getElementById('red').value, 10);
-        CLRZ.green = parseInt(document.getElementById('green').value, 10);
-        CLRZ.blue = parseInt(document.getElementById('blue').value, 10);
         CLRZ.bgDiv = document.getElementById('bg');
-        document.querySelectorAll('input[type="range"]').forEach((slider)=>{
-            slider.addEventListener('input', CLRZ.colorChanged);
+        document.querySelectorAll('input[data-color]').forEach((color)=>{color.value = CLRZ[color.getAttribute('data-color')];});
+        document.querySelectorAll('input[data-color]').forEach((color)=>{
+            color.addEventListener('input', CLRZ.colorChanged);
         });
         CLRZ.setDivColor(CLRZ.red, CLRZ.green, CLRZ.blue);
     },
@@ -14,9 +12,12 @@ const CLRZ= {
         CLRZ.bgDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     },
     colorChanged: (evt) => {
-        const slider = evt.currentTarget;
-        CLRZ[slider.id] = parseInt(slider.value, 10);
-        slider.setAttribute('value', slider.value);
+        const colorEl = evt.currentTarget;
+        const type = colorEl.getAttribute('type');
+        const color = colorEl.getAttribute('data-color');
+        CLRZ[color] = Number(colorEl.value);
+        const selector = `input[type=${type === "range" ? "'number'" : "'range'"}][data-color="${color}"]`;
+        document.querySelector(selector).value = colorEl.value;
         CLRZ.setDivColor(CLRZ.red, CLRZ.green, CLRZ.blue);
     }
 };

@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="colorizer.css"/>
 </head>
 <body>
-<input type="range" id="red" min="0" max="255" value="255">
-<input type="range" id="green" min="0" max="255" value="0">
-<input type="range" id="blue" min="0" max="255" value="0">
-<div id="bg"></div>
+<div class="w100 cf">
+    <div id="bg" class="float-left"></div>
+    <div class="slider-wrapper float-right">
+        <input type="range" data-color="red" min="0" max="255">
+        <input type="range" data-color="green" min="0" max="255">
+        <input type="range" data-color="blue" min="0" max="255">
+    </div>
+</div>
+<div class="rgb-values">
+    <div>RGB:</div>
+    <input type="number" data-color="red" min="0" max="255">
+    <input type="number" data-color="green" min="0" max="255">
+    <input type="number" data-color="blue" min="0" max="255">
+</div>
 <script src="colorizer.js"></script>
 </body>
 </html>

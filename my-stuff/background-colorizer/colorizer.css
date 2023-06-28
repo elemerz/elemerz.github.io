@@ -1,21 +1,44 @@
+/*** Utility classes ***/
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {clear: both;}
+.float-left {float: left !important;}
+.float-right {float: right !important;}
+.w100 {width: 100% !important;}
+
+/*** Body, Html ***/
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+html * {box-sizing: inherit;}
+
+/*** Slider -related styling ***/
+/*The color we wanna achieve*/
 #bg {
-    width: 300px;
-    height:300px;
+    width: 50px;
+    height:50px;
     border: 1px solid black;
 }
-input[type="range"] {
-    position: relative;
-    margin-bottom: 3em;
+
+.slider-wrapper {
+    width: calc(100% - 50px);
 }
-input[type="range"]:after {
-    content: attr(value);
-    border-style: inset;
-    border-radius: 5px;
-    padding: .25em .35em;
-    background-color: #ccc;
-    color: #000;
-    font-weight: bold;
-    position: absolute;
-    left:50%;
-    transform: translate(-50%, 20px);
+input[type="range"] {
+    display: block;
+    width: 100%;
+}
+input[type="number"] {
+    width: 50px;
+    margin: 0;
+}
+
+.rgb-values {
+    text-align: center;
 }
