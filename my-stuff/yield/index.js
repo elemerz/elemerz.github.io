@@ -1,16 +1,18 @@
-const ctt = halt();
-ctt.next().value;
-function* halt() {
-    const fnc = arguments.callee;
-    fnc.halted = true;
-    while(fnc.halted) {
-        console.log('Execution Halted.... halted =', fnc.halted);
-        yield fnc.halted = ! fnc.halted;
-        console.log('Execution continued', fnc.halted);
+const iter = halt(1);
+let index = 0;
+let arr = ['A', 'B', 'C', 'D', 'E'];
+function* halt(i) {
+    let j = i;
+    let k = '';
+    while(j < 5/*fnc.halted*/) {
+        console.log('Before yield', j);
+        k = yield j++;
+        console.log('After yield: j, k', j, k);
     }
-    console.log('halt, main return...')
+    console.log('After while main return... j = ', j);
 }
 
 function onIncrementClick() {
-    ctt.next().value;
+    iter.next(arr[index]).value;
+    index = index < 4 ? index + 1 : 0;
 }
