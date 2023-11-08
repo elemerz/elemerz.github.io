@@ -1,0 +1,15 @@
+/* Initial state */
+.slidable {
+    border: 3px solid red;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+/* State after sliding up */
+.slide-up {
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
