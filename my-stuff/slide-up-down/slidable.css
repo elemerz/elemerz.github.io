@@ -1,15 +1,34 @@
-/* Initial state */
-.slidable {
-    border: 3px solid red;
-    border-radius: 1rem;
-    padding: 1rem;
-    transition: all 1s ease;
-    overflow: hidden;
+/*** Method A: Using Flexbox***/
+.wrapper-flexbox {
+    display: flex;
+    border: 1px solid red;
+    padding: 10px;
 }
 
-/* State after sliding up */
-.slide-up {
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+.wrapper-flexbox .inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.wrapper-flexbox.is-open .inner {
+    max-height: 100%;
+}
+
+/*** Method B: Using CSS grids***/
+.wrapper-cssgrid {
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.wrapper-cssgrid.is-open {
+    grid-template-rows: 1fr;
+}
+
+.wrapper-cssgrid .inner {
+    overflow: hidden;
 }
