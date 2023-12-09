@@ -1,0 +1,45 @@
+/*** Generic (context) styling***/
+html, body {width: 100%; height: 100%; border: 0 none;}
+body * {box-sizing: border-box;}
+/*** TreeView styles***/
+.tree-container {
+    border: 1px solid red; /*for debugging*/
+    width: 80%;
+    margin-left: 10%;
+}
+.tree-view {}
+.tree-view,  .tree-view div.children { /*Reset default styling*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tree-view div.node {
+    margin: 0;
+    padding: 0 0 0 20px;
+    line-height: 1.5em;
+    position: relative;
+}
+.tree-view > div.node {padding-left: 0} /*Don't indent Root level*/
+.tree-view .node-label {
+    padding-left: 15px; /*make room for expander*/
+}
+.tree-view .expander::before {
+    content: ">"; /* > Unicode character */
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.6s;
+}
+.tree-view .collapsed > .expander::before {
+    transform: rotate(0deg);
+}
+.tree-view .expanded > .expander::before {
+    transform: rotate(90deg);
+}
+.tree-view div.children {
+    height: auto;
+    overflow: hidden;
+    transition: height 0.6s;
+}
+.tree-view .collapsed > div.children {
+    height: 0;
+}
