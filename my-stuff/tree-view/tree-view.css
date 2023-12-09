@@ -17,8 +17,7 @@ body * {box-sizing: border-box;}
 }
 .tree-view div.node {
     margin: 0;
-    padding: 0 0 0 20px;
-    /*line-height: 1.5em;*/
+    padding: 0 0 0 25px; /*level indent*/
 }
 .tree-view > div.node {padding-left: 0} /*Don't indent Root level*/
 /*** Node Elements***/
@@ -47,7 +46,7 @@ body * {box-sizing: border-box;}
 /*** Node Icon***/
 .tree-view .node-elements > .node-icon {
     display: inline-block;
-    width: 22px;
+    width: 18px; /*enlarge if you wanna more horizontal space around the icon*/
     height: 22px;
     background: url("./images/folder.svg") no-repeat 50% 50%;
 }
