@@ -24,10 +24,16 @@ body * {box-sizing: border-box;}
     padding-left: 15px; /*make room for expander*/
 }
 .tree-view .expander::before {
-    content: ">"; /* > Unicode character */
+    content: "\203A"; /* Single Right-Pointing Angle Quotation Mark */
     cursor: pointer;
     position: absolute;
     transition: transform 0.6s;
+    /*border: 1px dotted #009688;*/
+    font-weight: bold;
+    display: inline-block;
+    width: 10px;
+    line-height: 22px;
+    text-align: center;
 }
 .tree-view .collapsed > .expander::before {
     transform: rotate(0deg);
