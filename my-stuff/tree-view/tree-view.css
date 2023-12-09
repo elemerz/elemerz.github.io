@@ -5,6 +5,8 @@ body * {box-sizing: border-box;}
 .tree-container {
     border: 1px solid red; /*for debugging*/
     width: 80%;
+    max-height: 400px;
+    overflow: auto;
     margin-left: 10%;
 }
 .tree-view {}
@@ -16,40 +18,52 @@ body * {box-sizing: border-box;}
 .tree-view div.node {
     margin: 0;
     padding: 0 0 0 20px;
-    line-height: 1.5em;
-    position: relative;
+    /*line-height: 1.5em;*/
 }
 .tree-view > div.node {padding-left: 0} /*Don't indent Root level*/
-.tree-view .node-label {
-    padding: 5px 5px 5px 15px; /*make room for expander on the left-side*/
-    cursor: pointer;
+/*** Node Elements***/
+.tree-view .node-elements {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-start; /* Align children horizontally to the start (left) */
+    align-items: flex-start; /* Align children vertically to the start (top) */    height: 22px;
+    gap: 10px; /* Add horizontal spacing between the children */
+    background-color: transparent; /**/
 }
-.tree-view .node-label:focus {
-    background-color: lightskyblue;
-}
-.tree-view .expander::before {
-    content: "\203A"; /* Single Right-Pointing Angle Quotation Mark */
-    cursor: pointer;
-    position: absolute;
-    transition: transform 0.6s;
-    /*border: 1px dotted #009688;*/
-    font-weight: bold;
+/*** Expander***/
+.tree-view .node-elements > .expander {
     display: inline-block;
-    width: 10px;
-    line-height: 22px;
-    padding-left: 5px;
-}
-.tree-view .collapsed > .expander::before {
+    align-self: center; /* Vertically center expander only */
+    width: 16px;
+    height: 16px;
+    background: transparent url("./images/chevron.svg") no-repeat 50% 0;
+    cursor: pointer;
+    transition: transform 0.6s;
+    /*border: 1px dotted #ffb904;*/
     transform: rotate(0deg);
 }
-.tree-view .expanded > .expander::before {
+.tree-view .expanded > .node-elements > .expander {
     transform: rotate(90deg);
 }
-/*** Animating Expand/collapse of non-fixed height: CSS Grid hack***/
+/*** Node Icon***/
+.tree-view .node-elements > .node-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("./images/folder.svg") no-repeat 50% 50%;
+}
+/*** Node Label***/
+.tree-view .node-elements > .node-label {
+    padding: 5px 5px 5px 5px; /*make room around the text*/
+    cursor: pointer;
+}
+.tree-view .node-elements > .node-label:focus {
+    background-color: lightskyblue;
+}
+/*** Children: Animating on expand/collapse to non-fixed height: CSS Grid hack***/
 .tree-view .node > .children {
     display: grid;
     transition: grid-template-rows 0.5s ease-out;
 }
-.tree-view .node.collapsed > .children {grid-template-rows: 0fr;}
+.tree-view .node > .children {grid-template-rows: 0fr;} /*collapsed*/
 .tree-view .node.expanded > .children {grid-template-rows: 1fr;}
 .tree-view .children-inner {overflow: hidden;}

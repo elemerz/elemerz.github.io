@@ -63,7 +63,7 @@ const treeModel={
 function createTree(node, parentElement) {
     const treeNode = document.createElement('div');
     treeNode.className = 'node';
-    treeNode.innerHTML = `<span class=${node.children.length ? "expander" : ""}></span><span class="node-label" tabindex="0">${node.label}</span>`;
+    treeNode.innerHTML = `<div class="node-elements"><span class=${node.children.length ? "expander" : ""}></span><span class="node-icon"></span><span class="node-label" tabindex="0">${node.label}</span></div>`;
     parentElement.appendChild(treeNode);
 
     if (node.children && node.children.length > 0) {
@@ -76,10 +76,9 @@ function createTree(node, parentElement) {
 
 
         node.children.forEach(child => createTree(child, childrenInner));
-        treeNode.classList.add(node.expanded ? 'expanded' : 'collapsed');
+        treeNode.classList.add(node.expanded ? 'expanded' : '');
         treeNode.querySelector('.expander').addEventListener('click', function() {
             treeNode.classList.toggle('expanded');
-            treeNode.classList.toggle('collapsed');
         });
     }
 }
