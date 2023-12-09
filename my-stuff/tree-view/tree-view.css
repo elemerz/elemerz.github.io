@@ -26,7 +26,7 @@ body * {box-sizing: border-box;}
     display: flex; /* Use flexbox layout */
     justify-content: flex-start; /* Align children horizontally to the start (left) */
     align-items: flex-start; /* Align children vertically to the start (top) */    height: 22px;
-    gap: 10px; /* Add horizontal spacing between the children */
+    gap: 3px; /* Add horizontal spacing between the children */
     background-color: transparent; /**/
 }
 /*** Expander***/
