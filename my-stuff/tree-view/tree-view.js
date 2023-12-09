@@ -63,7 +63,7 @@ const treeModel={
 function createTree(node, parentElement) {
     const treeNode = document.createElement('div');
     treeNode.className = 'node';
-    treeNode.innerHTML = `<span class="expander"></span><span class="node-label">${node.label}</span>`;
+    treeNode.innerHTML = `<span class=${node.children.length ? "expander" : ""}></span><span class="node-label" tabindex="0">${node.label}</span>`;
     parentElement.appendChild(treeNode);
 
     if (node.children && node.children.length > 0) {

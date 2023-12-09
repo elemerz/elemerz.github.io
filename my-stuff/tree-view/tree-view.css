@@ -21,7 +21,11 @@ body * {box-sizing: border-box;}
 }
 .tree-view > div.node {padding-left: 0} /*Don't indent Root level*/
 .tree-view .node-label {
-    padding-left: 15px; /*make room for expander*/
+    padding: 5px 5px 5px 15px; /*make room for expander on the left-side*/
+    cursor: pointer;
+}
+.tree-view .node-label:focus {
+    background-color: lightskyblue;
 }
 .tree-view .expander::before {
     content: "\203A"; /* Single Right-Pointing Angle Quotation Mark */
@@ -33,7 +37,7 @@ body * {box-sizing: border-box;}
     display: inline-block;
     width: 10px;
     line-height: 22px;
-    text-align: center;
+    padding-left: 5px;
 }
 .tree-view .collapsed > .expander::before {
     transform: rotate(0deg);
