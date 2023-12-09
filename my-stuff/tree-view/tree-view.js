@@ -1,7 +1,7 @@
 const treeModel={
     label:'TreeRoot', icon:'root.png', expanded: true,
     children: [
-        {label:'Fruits', icon:'fruits.png', expanded: true,
+        {label:'Fruits', icon:'fruits.png', expanded: true, actionButtons:[{action:editLabel, tooltip:'Edit the label', iconClass:'edit-label'}],
             children:[
                 {label:'Apple', icon:'apple.png', expanded: true,
                     children: [
@@ -60,11 +60,11 @@ const treeModel={
     ]
 };
 
-function createTree(node, parentElement) {
-    const treeNode = document.createElement('div');
-    treeNode.className = 'node';
-    treeNode.innerHTML = `<div class="node-elements"><span class=${node.children.length ? "expander" : ""}></span><span class="node-icon"></span><span class="node-label" tabindex="0">${node.label}</span></div>`;
-    parentElement.appendChild(treeNode);
+function createSubTree(node, parentElement) {
+    const nodeElement = document.createElement('div');
+    nodeElement.className = 'node';
+    nodeElement.innerHTML = `<div class="node-elements"><span class=${node.children.length ? "expander" : ""}></span><span class="node-icon"></span><span class="node-label" tabindex="0">${node.label}</span><span class="node-buttons"></span></span></div>`;
+    parentElement.appendChild(nodeElement);
 
     if (node.children && node.children.length > 0) {
         const childrenInner = document.createElement('div');
@@ -72,19 +72,30 @@ function createTree(node, parentElement) {
         const childrenContainer = document.createElement('div');
         childrenContainer.className = 'children';
         childrenContainer.appendChild(childrenInner);
-        treeNode.appendChild(childrenContainer);
+        nodeElement.appendChild(childrenContainer);
 
 
-        node.children.forEach(child => createTree(child, childrenInner));
-        treeNode.classList.add(node.expanded ? 'expanded' : '');
-        treeNode.querySelector('.expander').addEventListener('click', function() {
-            treeNode.classList.toggle('expanded');
+        node.children.forEach(child => createSubTree(child, childrenInner));
+        nodeElement.classList.add(node.expanded ? 'expanded' : '');
+        nodeElement.querySelector('.expander').addEventListener('click', function() {
+            nodeElement.classList.toggle('expanded');
         });
+        //assign action Buttons
+        node.actionButtons && node.actionButtons.forEach(btn => createButton(btn, nodeElement.querySelector('.node-buttons')));
     }
+}
+
+function createButton(btn, parentNode) {
+    if(!parentNode) {return;}
+    console.log('createButton:', btn, parentNode);
+    parentNode.appendChild(Object.assign(document.createElement("button"), {onclick: btn.action, title: btn.tooltip, className: "action-button " + btn.iconClass}))
 }
 
 function initTree() {
     const rootElement = document.getElementById('treeView');
     rootElement.innerHTML = ''; //make the method idempotent
-    createTree(treeModel, rootElement);
+    createSubTree(treeModel, rootElement);
+}
+function editLabel() {
+    console.log('switch label to edit mode.');
 }

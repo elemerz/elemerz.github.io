@@ -53,11 +53,37 @@ body * {box-sizing: border-box;}
 }
 /*** Node Label***/
 .tree-view .node-elements > .node-label {
-    padding: 5px 5px 5px 5px; /*make room around the text*/
+    padding: 0 5px; /*make room around the text*/
+    display: inline-block;
+    height: 100%;
+    line-height: 22px;
     cursor: pointer;
 }
 .tree-view .node-elements > .node-label:focus {
     background-color: lightskyblue;
+}
+/*** Node Buttons (container for action buttons)***/
+.tree-view .node-elements > .node-buttons {
+    display: flex;
+    justify-content: flex-start; /* Align children horizontally to the start (left) */
+    gap: 10px;
+}
+.tree-view .node-elements > .node-buttons > .action-button {
+    display: inline-block;
+    align-self: center; /* Vertically center expander only */
+    margin:0;
+    padding: 0;
+    width:22px;
+    height:22px;
+    border:1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.tree-view .node-elements > .node-buttons > .action-button.edit-label {
+    background-image: url("./images/action-edit.svg");
 }
 /*** Children: Animating on expand/collapse to non-fixed height: CSS Grid hack***/
 .tree-view .node > .children {
