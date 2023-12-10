@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Tree View</title>
+<style>
+  .tree-view ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tree-view li {
+    margin: 0;
+    padding: 0 0 0 20px;
+    line-height: 1.5em;
+    position: relative;
+  }
+  .tree-view .expander::before {
+    content: "\\e22f"; /* Adjusted Unicode character */
+    cursor: pointer;
+    position: absolute;
+    left: -15px;
+    transition: transform 0.6s;
+  }
+  .tree-view .collapsed > .expander::before {
+    transform: rotate(0deg);
+  }
+  .tree-view .expanded > .expander::before {
+    transform: rotate(90deg);
+  }
+  .tree-view .children {
+    height: auto;
+    overflow: hidden;
+    transition: height 0.6s;
+  }
+  .tree-view .collapsed > .children {
+    height: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="tree-view" id="treeView"></div>
+
+<script>
+const treeModel = {
+  // ... (your tree model goes here)
+};
+
+function createTree(node, parentElement) {
+  const li = document.createElement('li');
+  li.innerHTML = `<span class="expander"></span>${node.label}`;
+  parentElement.appendChild(li);
+
+  if (node.children && node.children.length > 0) {
+    const ul = document.createElement('ul');
+    ul.className = 'children';
+    li.appendChild(ul);
+    node.children.forEach(child => createTree(child, ul));
+    li.classList.add(node.expanded ? 'expanded' : 'collapsed');
+    li.querySelector('.expander').addEventListener('click', function() {
+      li.classList.toggle('expanded');
+      li.classList.toggle('collapsed');
+    });
+  }
+}
+
+const rootElement = document.createElement('ul');
+document.getElementById('treeView').appendChild(rootElement);
+createTree(treeModel, rootElement);
+</script>
+
+</body>
+</html>

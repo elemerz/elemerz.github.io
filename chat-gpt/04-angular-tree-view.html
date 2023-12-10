@@ -1,0 +1,16 @@
+<!-- ng generate component tree-view -->
+<!-- tree-view.component.html -->
+<ul class="tree-view">
+  <li *ngFor="let node of treeModel.children" [class.expanded]="node.expanded" [class.collapsed]="!node.expanded">
+    <span class="expander" (click)="toggleNode(node)">{{ node.label }}</span>
+    <ul class="children" *ngIf="node.expanded">
+      <ng-container *ngFor="let child of node.children">
+        <li [class.expanded]="child.expanded" [class.collapsed]="!child.expanded">
+          <span class="expander" (click)="toggleNode(child)">{{ child.label }}</span>
+          <!-- Add more nested ng-container if there are deeper levels -->
+        </li>
+      </ng-container>
+    </ul>
+  </li>
+</ul>
+
