@@ -74,21 +74,21 @@ function createSubTree(node, parentElement) {
         childrenContainer.appendChild(childrenInner);
         nodeElement.appendChild(childrenContainer);
 
-
         node.children.forEach(child => createSubTree(child, childrenInner));
         nodeElement.classList.add(node.expanded ? 'expanded' : '');
         nodeElement.querySelector('.expander').addEventListener('click', function() {
             nodeElement.classList.toggle('expanded');
         });
-        //assign action Buttons
-        node.actionButtons && node.actionButtons.forEach(btn => createButton(btn, nodeElement.querySelector('.node-buttons')));
     }
+    //assign action Buttons
+    node.actionButtons && node.actionButtons.forEach(btn => createButton(btn, nodeElement.querySelector('.node-buttons')));
 }
 
-function createButton(btn, parentNode) {
+function createButton(btnModel, parentNode) {
     if(!parentNode) {return;}
-    console.log('createButton:', btn, parentNode);
-    parentNode.appendChild(Object.assign(document.createElement("button"), {onclick: btn.action, title: btn.tooltip, className: "action-button " + btn.iconClass}))
+    console.log('createButton:', btnModel, parentNode);
+    const btnElement = document.createElement("button");
+    parentNode.appendChild(Object.assign(btnElement, {model: btnModel, onclick: btnModel.action, title: btnModel.tooltip, className: "action-button " + btnModel.iconClass}))
 }
 
 function initTree() {
@@ -96,6 +96,7 @@ function initTree() {
     rootElement.innerHTML = ''; //make the method idempotent
     createSubTree(treeModel, rootElement);
 }
-function editLabel() {
-    console.log('switch label to edit mode.');
+
+function editLabel(evt) {
+    console.log('switch label to edit mode. evt:', evt.currentTarget, 'Model', evt.currentTarget.model);
 }
