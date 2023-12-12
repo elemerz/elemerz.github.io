@@ -1,0 +1,5 @@
+Can you write a Typescript function traversing each node of the above tree model, having the following signature:
+function traverse(treeModel, specialNodeIds: number[], specialNodeProcessor: Function, otherNodeProcessor: Function):void;
+- The above function should visit each node in the tree.
+- If the visited node's id is among the  specialNodeIds ==> the specialNodeProcessor function should be called on the current node.
+- If the visited node's id is not found among the  specialNodeIds (a.k.a is any other node)==> the otherNodeProcessor function should be called on the current (non-special) node.

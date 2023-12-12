@@ -58,7 +58,8 @@ body * {box-sizing: border-box;}
     line-height: 22px;
     cursor: pointer;
 }
-.tree-view .node-elements > .node-label:focus {
+.tree-view .node .node-elements > .node-label:focus ,
+.tree-view .node.selected .node-elements > .node-label {
     background-color: lightskyblue;
 }
 /*** Node Buttons (container for action buttons)***/
