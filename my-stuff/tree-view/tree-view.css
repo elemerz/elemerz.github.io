@@ -16,7 +16,7 @@ body * {box-sizing: border-box;}
     padding: 0;
 }
 .tree-view div.node {
-    margin: 0;
+    margin: 5px 0;
     padding: 0 0 0 25px; /*level indent*/
 }
 .tree-view > div.node {padding-left: 0} /*Don't indent Root level*/
@@ -58,8 +58,11 @@ body * {box-sizing: border-box;}
     line-height: 22px;
     cursor: pointer;
 }
-.tree-view .node .node-elements > .node-label:focus ,
-.tree-view .node.selected .node-elements > .node-label {
+.tree-view .node.highlighted > .node-elements > .node-label {
+    background-color: #a1c8aa;
+}
+.tree-view .node.selected > .node-elements > .node-label,
+.tree-view .node .node-elements > .node-label:focus {
     background-color: lightskyblue;
 }
 /*** Node Buttons (container for action buttons)***/
