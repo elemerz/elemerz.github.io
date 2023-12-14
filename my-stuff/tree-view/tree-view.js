@@ -354,7 +354,8 @@ function createSubTree(node, parentElement) {
     const nodeElement = document.createElement('div');
     nodeElement.className = `node${node.selected ? ' selected' : ''}${node.highlighted ? ' highlighted' : ''}`;
     nodeElement['data-id'] = node.id;
-    nodeElement.innerHTML = `<div class="node-elements"><span class=${node.children.length ? "expander" : ""}></span><span class="node-icon"></span><span class="node-label" tabindex="0">${node.label}</span><span class="node-buttons"></span></span></div>`;
+    nodeElement.node = node;
+    nodeElement.innerHTML = `<div class="node-elements"><span class=${node.children.length ? "expander" : ""}></span><span class="node-icon"></span><span class="node-label" tabindex="0" onfocus="onNodeFocused(this)">${node.label}</span><span class="node-buttons"></span></span></div>`;
     parentElement.appendChild(nodeElement);
 
     if (node.children && node.children.length > 0) {
@@ -375,6 +376,10 @@ function createSubTree(node, parentElement) {
     node.actionButtons && node.actionButtons.forEach(btn => createButton(btn, nodeElement.querySelector('.node-buttons')));
 }
 
+function onNodeFocused(labelElement) {
+    console.log('onNodeFocused:', labelElement.closest('.node').node);
+}
+
 function createButton(btnModel, parentNode) {
     if(!parentNode) {return;}
     console.log('createButton:', btnModel, parentNode);
@@ -391,4 +396,24 @@ function initTree() {
 function editLabel(evt) {
     console.log('switch label to edit mode. evt:', evt.currentTarget, 'Model', evt.currentTarget.model);
     alert('switch label to edit mode.');
+}
+
+function traverse(
+    treeModel, specialNodeIds, specialNodeProcessor, otherNodeProcessor){
+    // Helper function to process each node
+    function processNode(node) {
+        if (specialNodeIds.includes(node.id)) {
+            specialNodeProcessor(node);
+        } else {
+            otherNodeProcessor(node);
+        }
+
+        // If the node has children, traverse them as well
+        if (node.children && node.children.length > 0) {
+            node.children.forEach(processNode);
+        }
+    }
+
+    // Start processing from the root node
+    processNode(treeModel);
 }
