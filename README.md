@@ -3,6 +3,7 @@ Eli's Github pages:
 - ![Web Training](webtraining\favicon.png)[Web Training](webtraining\webtraining.html)
 - ![SpringBoot](springboot\favicon.png)[SpringBoot](springboot\springboot.html)
 - ![Angular](angular\favicon.png)[Angular](angular\angular.html)
+- ![AI (Artifficial Intelligence)](angular\favicon.png)[AI](ai\ai.html)
 - My Stuff
   - ![TipButton](my-stuff/tip-button/favicon-16x16.png)[EZ Tooltip](my-stuff/tip-button/index.html)
   - ![CustomDialog](my-stuff/custom-dialog/favicon-16x16.png)[Custom Dialog](my-stuff/custom-dialog/dialog.html)
