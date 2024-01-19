@@ -4,6 +4,7 @@
   icon: 'root.png',
   expanded: true,
   selected: false,
+  actionButtons: [],
   children: [
     {
       id: 2,
@@ -13,7 +14,9 @@
       selected: false,
       actionButtons: [
         {
-          action: editLabel,
+          kind: 'action', /*action|passiveLabel*/
+          show: true, /*true|false*/
+          action: editLabel, /*function pointer*/
           tooltip: 'Edit the label',
           iconClass: 'edit-label'
         }

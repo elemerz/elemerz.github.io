@@ -2,5 +2,5 @@ Using plain HTML, CSS 3 and minimal JavaScript, implement a Tree View based on t
 - Each tree node has an "expander" symbol.
 - In collapsed state the expander is a "right angle" symbol.
 - in expanded state the same symbol is rotated 90 degrees to the right (a.k.a: downwards)
-- The switch between the expanded/collapsed state should me animated (0.6 seconds)
-- When a node is expanded/collapsed the transition should me animated in the same timeframe (0.6 seconds)
+- The switch between the expanded/collapsed state should be animated (0.6 seconds)
+- When a node is expanded/collapsed the transition should be animated in the same timeframe (0.6 seconds)
