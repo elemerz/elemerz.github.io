@@ -15,8 +15,9 @@ const treeModel = {
             highlighted: true,
             actionButtons: [
                 {
-                    kind: 'action', /*action|label|error*/
-                    show: true, /*true|false*/
+                    kind: 'action', /*action|label*/
+                    hide: false,
+                    showOnNodeSelection, /*true|false*/
                     action: editLabel, /*function pointer*/
                     tooltip: 'Edit the label',
                     iconClass: 'edit-label'
@@ -398,8 +399,7 @@ function editLabel(evt) {
     alert('switch label to edit mode.');
 }
 
-function traverse(
-    treeModel, specialNodeIds, specialNodeProcessor, otherNodeProcessor){
+function traverse(treeModel, specialNodeIds, specialNodeProcessor, otherNodeProcessor) {
     // Helper function to process each node
     function processNode(node) {
         if (specialNodeIds.includes(node.id)) {

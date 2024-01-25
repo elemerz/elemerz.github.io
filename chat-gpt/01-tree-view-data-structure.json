@@ -2,9 +2,10 @@
   id: 1,
   label: 'TreeRoot',
   icon: 'root.png',
-  expanded: true,
-  selected: false,
-  actionButtons: [],
+  expanded: true,   // true when node expanded
+  selected: false, // max one selected node
+  highlighted: false, //many hilited nodes are possible
+  actionButtons: [], // array of action buttons
   children: [
     {
       id: 2,
@@ -12,6 +13,7 @@
       icon: 'fruits.png',
       expanded: true,
       selected: false,
+      highlighted: false,
       actionButtons: [
         {
           kind: 'action', /*action|passiveLabel*/
@@ -28,6 +30,7 @@
           icon: 'apple.png',
           expanded: true,
           selected: false,
+          highlighted: false,
           children: [
             {
               id: 4,
@@ -35,6 +38,7 @@
               icon: 'granny-smith.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -45,6 +49,7 @@
               icon: 'red-delicious.png',
               expanded: false,
               selected: true,
+              highlighted: false,
               children: [
                 
               ]
@@ -55,6 +60,7 @@
               icon: 'golden.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -65,8 +71,9 @@
               icon: 'pink-lady.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
-                
+
               ]
             }
           ]
@@ -83,6 +90,7 @@
               icon: 'williams.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -93,6 +101,7 @@
               icon: 'abate.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -103,6 +112,7 @@
               icon: 'concorde.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -113,6 +123,7 @@
               icon: 'anjou.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -131,6 +142,7 @@
               icon: 'besztercei.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -141,6 +153,7 @@
               icon: 'fosoka.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -151,6 +164,7 @@
               icon: 'ruby-queen.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -161,6 +175,7 @@
               icon: 'damson.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -187,6 +202,7 @@
               icon: 'yukon-gold.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -197,6 +213,7 @@
               icon: 'purple-majesty.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -207,6 +224,7 @@
               icon: 'king-edward.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -217,6 +235,7 @@
               icon: 'desiree',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -235,6 +254,7 @@
               icon: 'roma.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -245,6 +265,7 @@
               icon: 'cherry.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -265,6 +286,7 @@
               icon: 'indigo-rose.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -293,6 +315,7 @@
               icon: 'imperator.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -303,6 +326,7 @@
               icon: 'nelson.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
@@ -313,6 +337,7 @@
               icon: 'flyaway.png',
               expanded: false,
               selected: false,
+              highlighted: false,
               children: [
                 
               ]
