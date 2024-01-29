@@ -1,0 +1,20 @@
+/* Define a custom animation named Morph */
+@keyframes Morph {
+    /* Start and end with a circle shape */
+    0%, 100% {
+        border-radius: 50%;
+    }
+    /* Change to a rectangle shape at 50% */
+    50% {
+        border-radius: 0;
+    }
+}
+
+/* Apply the animation to a div element */
+div {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    /* Run the animation for 2 seconds, infinite times, with alternate direction */
+    animation: Morph 2s infinite alternate;
+}
