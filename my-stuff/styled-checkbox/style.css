@@ -1,0 +1,11 @@
+.cb {
+    display:inline-block;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: url("checkbox.png") no-repeat center 0;
+}
+.cb:checked {
+    background-position: center -124px;
+}
+
