@@ -9,6 +9,7 @@ Eli's Github pages:
   - ![CSS Toggle](my-stuff/css-toggle/favicon-16x16.png)[CSS Toggle](my-stuff/css-toggle/index.html)
   - ![Styled Checkbox](my-stuff/styled-checkbox/favicon-16x16.png)[Styled Checkbox](my-stuff/styled-checkbox/index.html)
   - ![CustomDialog](my-stuff/custom-dialog/favicon-16x16.png)[Custom Dialog](my-stuff/custom-dialog/dialog.html)
+  - ![Sphere](my-stuff/sphere-css3/favicon-16x16.png)[sphere](my-stuff/sphere-css3/index.html)
   - ![Draggable](my-stuff/draggable/favicon-16x16.png)[Drag By Handle](my-stuff/draggable/draggable.html)
   - ![SpeechBubble](my-stuff/speech-bubble/favicon-16x16.png)[SpeechBubble](my-stuff/speech-bubble/index.html)
   - ![Favicon Unicode](my-stuff/character-as-favicon/favicon-16x16.png)[Favicon Unicode](my-stuff/character-as-favicon/index.html)
