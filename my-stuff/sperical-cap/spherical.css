@@ -1,0 +1,7 @@
+.sphere {
+    width: 200px;
+    height: 100px; /* Half the height to make it a cap */
+    background-color: red;
+    border-radius: 100px 100px 0 0; /* Full radius on the top, none on the bottom */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+}
