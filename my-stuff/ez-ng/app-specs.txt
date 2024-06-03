@@ -1,0 +1,29 @@
+In my brand new Angular 18.0.2 application I want to use the following npm module:
+ngx-toastr@19.0.0
+
+I have the following main.ts:
+###
+import { bootstrapApplication } from '@angular/platform-browser';
+import { appConfig } from './app/app.config';
+import { AppComponent } from './app/app.component';
+
+bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
+
+###
+
+and the following app.config:
+###
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { provideRouter } from '@angular/router';
+
+import { routes } from './app.routes';
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+};
+###
+
+Can I configure the ngx-toastr so that it "elegantly" integrates in my application?
+Can You show me an example of usage in my AppComponent ?
+
+npm install @angular/animations

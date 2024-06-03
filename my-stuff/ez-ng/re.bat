@@ -1,0 +1,1 @@
+yarn rebuild && ng serve
