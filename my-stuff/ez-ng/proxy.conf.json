@@ -1,0 +1,15 @@
+{
+  "/api": {
+    "target": "https://localhost:1010",
+    "secure": false
+  },
+  "/core/connect/token": {
+    "target": "https://localhost:1010",
+    "secure": false
+  },
+  "/ez-notifications": {
+    "target": "https://localhost:1010",
+    "secure": false,
+    "ws": true
+  }
+}
