@@ -1,0 +1,26 @@
+I develop a secure web application with the following main technical specifications:
+- Frontend is Angular 18 with standalone components, and zone-less setup.
+- Backend is Spring Boot 3.3.0
+- Security layer (authentication and authorization): OAuth2 PKCE Flow.
+  - On FrontEnd: angular-oauth-oidc with jwks
+  - On Backend: Spring Security 6.x
+- Data Sending:
+  - Sends data from FrontEnd to BackEnd: Angular's HttpClient.post(Multipart file in FormData)
+  - Sends data from BackEnd to FrontEnd: WebSocket's simpMessagingTemplate.convertAndSend(uri, progressInformation)
+    - progressInformation(boolean errorOccurred, String messageKey, byte[] responseFileBytes)
+  - In FrontEnd the WebSocket Layer should be rxjs's WebSocketSubject
+  - We will NOT send data from FrontEnd via WebSocket
+  - In the FrontEnd WebSocket will be used ONLY for receiving the progressInformation messages, which in success-case will contain also the responseFileBytes.
+
+Functional specifications:
+- The application should support only modern browsers.
+- The application consists of a single screen having an upload button on it.
+- The User selects a Big zip file (so-called zhZipFile).
+- The a series of validations are performed on the zhZipFile, and if it is valid then is sent to the server via Angular's HttpClient.post(Multipart FormData)
+- The SpringBoot 3.3.0 BackEnd controller's fileReceived(MultiPartFile) method receives the file, and starts its processing.
+- After a successful processing a response file is generated, and its bytes are sent back to the browser.
+- The processing may take a long time (~ 1 minute).
+- The processing has 7 different Phases.
+- While processing, the backend sends a progressInformation record back to the FrontEnd after each processing phase.
+- If an error occurs during any of the processing phases, the progressInfo will have its errorOccurred flag set, and the message will have the meaning of an errorMessage.
+- If the processing completes without any errors, its result will be a responseFile. In this case the backend will send back to the browser: progressInformation(errorOccurred:false,messageKey:'success', responseFileBytes)
