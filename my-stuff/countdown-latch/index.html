@@ -1,0 +1,29 @@
+<!--https://www.youtube.com/watch?v=WzZhZ-366Iw-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown latch</title>
+    <style>
+        @property --degrees {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+        .countdown {
+            --degrees: 0deg;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: conic-gradient(#ccc 0turn var(--degrees), green 0turn);
+            animation: rotate-once 1s linear forwards;
+        }
+        @keyframes rotate-once {
+            100% {--degrees: 360deg;}
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown" style="animation-duration: 5s;"></div>
+</body>
+</html>
