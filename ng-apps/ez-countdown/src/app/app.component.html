@@ -1,0 +1,3 @@
+<button (click)="startStopCountdown()">{{showCountDown ? 'Stop' : 'Start'}} Countdown Latch</button>
+<app-count-down-latch *ngIf="showCountDown" [duration]="5" [fillColor]="'red'" [backgroundColor]="'#eee'"></app-count-down-latch>
+<router-outlet />

@@ -1,0 +1,18 @@
+@property --degrees {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.countdown {
+  --degrees: 0deg;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(var(--background-color) 0turn var(--degrees), var(--fill-color) 0turn);
+  animation: rotate-once var(--duration) linear forwards;
+}
+
+@keyframes rotate-once {
+  100% { --degrees: 360deg; }
+}
