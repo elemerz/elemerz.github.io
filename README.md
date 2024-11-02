@@ -23,3 +23,4 @@ Eli's Github pages:
   - ![RoundTable](my-stuff/round-table/favicon-16x16.png)[RoundTable](my-stuff/round-table/index.html)
   - ![ImageAsTable](my-stuff/img-as-table/favicon-16x16.png)[ImageAsTable](my-stuff/img-as-table/index.html)
   - ![GithubCopilot](my-stuff/copilot/favicon-16x16.png)[GithubCopilot](my-stuff/copilot/index.html)
+  - ![Rotating Font](my-stuff/rotating-font/favicon-16x16.png)[RotatingFont](my-stuff/rotating-font/index.html)
