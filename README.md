@@ -4,7 +4,7 @@ Eli's Github pages:
 - ![SpringBoot](springboot\favicon.png)[SpringBoot](springboot\springboot.html)
 - ![Angular](angular\favicon.png)[Angular](angular\angular.html)
 - ![AI (Artifficial Intelligence)](angular\favicon.png)[AI](ai\ai.html)
-- My Stuff
+- My Snippets
   - ![TipButton](my-stuff/tip-button/favicon-16x16.png)[EZ Tooltip](my-stuff/tip-button/index.html)
   - ![CSS Toggle](my-stuff/css-toggle/favicon-16x16.png)[CSS Toggle](my-stuff/css-toggle/index.html)
   - ![Styled Checkbox](my-stuff/styled-checkbox/favicon-16x16.png)[Styled Checkbox](my-stuff/styled-checkbox/index.html)
@@ -24,3 +24,7 @@ Eli's Github pages:
   - ![ImageAsTable](my-stuff/img-as-table/favicon-16x16.png)[ImageAsTable](my-stuff/img-as-table/index.html)
   - ![GithubCopilot](my-stuff/copilot/favicon-16x16.png)[GithubCopilot](my-stuff/copilot/index.html)
   - ![Rotating Font](my-stuff/rotating-font/favicon-16x16.png)[RotatingFont](my-stuff/rotating-font/index.html)
+- My Apps
+  - 🔢[NumberConverter](my-apps/number-converter/number-converter.html)
+
+  

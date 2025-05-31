@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Base Converter</title>
+    <link rel="stylesheet" href="number-converter.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Number Base Converter</h1>
+            <p>Convert numbers between different bases (2-36 and base 60)</p>
+        </header>
+
+        <main class="converter">
+            <div class="conversion-section">
+                <div class="input-section">
+                    <h2>Input</h2>
+                    <div class="form-group">
+                        <label for="input-base">Base:</label>
+                        <select id="input-base" class="base-selector">
+                            <option value="2">Binary (2)</option>
+                            <option value="3">Base 3</option>
+                            <option value="4">Base 4</option>
+                            <option value="5">Base 5</option>
+                            <option value="6">Base 6</option>
+                            <option value="7">Base 7</option>
+                            <option value="8">Octal (8)</option>
+                            <option value="9">Base 9</option>
+                            <option value="10" selected>Decimal (10)</option>
+                            <option value="11">Base 11</option>
+                            <option value="12">Base 12</option>
+                            <option value="13">Base 13</option>
+                            <option value="14">Base 14</option>
+                            <option value="15">Base 15</option>
+                            <option value="16">Hexadecimal (16)</option>
+                            <option value="17">Base 17</option>
+                            <option value="18">Base 18</option>
+                            <option value="19">Base 19</option>
+                            <option value="20">Base 20</option>
+                            <option value="21">Base 21</option>
+                            <option value="22">Base 22</option>
+                            <option value="23">Base 23</option>
+                            <option value="24">Base 24</option>
+                            <option value="25">Base 25</option>
+                            <option value="26">Base 26</option>
+                            <option value="27">Base 27</option>
+                            <option value="28">Base 28</option>
+                            <option value="29">Base 29</option>
+                            <option value="30">Base 30</option>
+                            <option value="31">Base 31</option>
+                            <option value="32">Base 32</option>
+                            <option value="33">Base 33</option>
+                            <option value="34">Base 34</option>
+                            <option value="35">Base 35</option>
+                            <option value="36">Base 36</option>
+                            <option value="60">Base 60 (Babylonian)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-number">Number:</label>
+                        <div class="input-container">
+                            <input type="text" id="input-number" class="number-input" placeholder="Enter number...">
+                            <div id="char-counter" class="char-counter"></div>
+                        </div>
+                        <div id="input-help" class="help-text"></div>
+                    </div>
+                    <div id="input-error" class="error-message"></div>
+                </div>
+
+                <div class="conversion-arrow">
+                    <button id="swap-bases" class="swap-button" title="Swap input and output bases">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 16l4-4-4-4M17 8l-4 4 4 4"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="output-section">
+                    <h2>Output</h2>
+                    <div class="form-group">
+                        <label for="output-base">Base:</label>
+                        <select id="output-base" class="base-selector">
+                            <option value="2">Binary (2)</option>
+                            <option value="3">Base 3</option>
+                            <option value="4">Base 4</option>
+                            <option value="5">Base 5</option>
+                            <option value="6">Base 6</option>
+                            <option value="7">Base 7</option>
+                            <option value="8">Octal (8)</option>
+                            <option value="9">Base 9</option>
+                            <option value="10">Decimal (10)</option>
+                            <option value="11">Base 11</option>
+                            <option value="12">Base 12</option>
+                            <option value="13">Base 13</option>
+                            <option value="14">Base 14</option>
+                            <option value="15">Base 15</option>
+                            <option value="16" selected>Hexadecimal (16)</option>
+                            <option value="17">Base 17</option>
+                            <option value="18">Base 18</option>
+                            <option value="19">Base 19</option>
+                            <option value="20">Base 20</option>
+                            <option value="21">Base 21</option>
+                            <option value="22">Base 22</option>
+                            <option value="23">Base 23</option>
+                            <option value="24">Base 24</option>
+                            <option value="25">Base 25</option>
+                            <option value="26">Base 26</option>
+                            <option value="27">Base 27</option>
+                            <option value="28">Base 28</option>
+                            <option value="29">Base 29</option>
+                            <option value="30">Base 30</option>
+                            <option value="31">Base 31</option>
+                            <option value="32">Base 32</option>
+                            <option value="33">Base 33</option>
+                            <option value="34">Base 34</option>
+                            <option value="35">Base 35</option>
+                            <option value="36">Base 36</option>
+                            <option value="60">Base 60 (Babylonian)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="output-number">Result:</label>
+                        <div class="output-container">
+                            <input type="text" id="output-number" class="number-output" readonly placeholder="Result will appear here...">
+                            <button id="copy-button" class="copy-button" title="Copy to clipboard">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="output-help" class="help-text"></div>
+                    </div>
+                    <div id="output-error" class="error-message"></div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>Supported Formats</h3>
+                <div class="format-info">
+                    <div class="format-item">
+                        <strong>Bases 2-36:</strong> Use digits 0-9 and letters A-Z
+                    </div>
+                    <div class="format-item">
+                        <strong>Base 60 (Babylonian):</strong> Use comma-separated values (0-59)
+                        <br><small>Example: 1,30,45 represents 1×60² + 30×60¹ + 45×60⁰</small>
+                    </div>
+                    <div class="format-item">
+                        <strong>Decimals:</strong> Use dot (.) for fractional parts in bases 2-36
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="number-converter.js"></script>
+</body>
+</html>
