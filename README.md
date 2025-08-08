@@ -24,6 +24,7 @@ Eli's Github pages:
   - ![ImageAsTable](my-stuff/img-as-table/favicon-16x16.png)[ImageAsTable](my-stuff/img-as-table/index.html)
   - ![GithubCopilot](my-stuff/copilot/favicon-16x16.png)[GithubCopilot](my-stuff/copilot/index.html)
   - ![Rotating Font](my-stuff/rotating-font/favicon-16x16.png)[RotatingFont](my-stuff/rotating-font/index.html)
+  - ![docx-book](my-stuff/pdf2book/favicon-16x16.png)[DocXBook](my-stuff/pdf2book/index.html)
 - My Apps
   - 🔢[NumberConverter](my-apps/number-converter/number-converter.html)
 

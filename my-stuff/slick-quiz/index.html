@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SlickQuiz Demo</title>
+    <link href="3rdparty/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="3rdparty/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="3rdparty/css/master.css" media="screen" rel="stylesheet" type="text/css">
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #slickQuiz { max-width: 600px; margin: auto; }
+    </style>
+</head>
+<body>
+
+<h1>My First SlickQuiz</h1>
+<div id="slickQuiz"></div>
+
+<script src="3rdparty/jquery.min.js"></script>
+<script src="3rdparty/slick-quiz.js"></script>
+<script src="3rdparty/slick-quiz-config.js"></script>
+<script>
+    // 1) Define your quiz data
+    const quizData = {
+        "info": {
+            "name":    "Basic Trivia",
+            "main":    "<p>Test your knowledge!</p>",
+            "results": "<h4>All done!</h4><p>Check your score below.</p>",
+            "level1":  "You're awesome!",
+            "level2":  "Pretty good.",
+            "level3":  "Not bad, but keep learning.",
+            "level4":  "Better luck next time.",
+            "level5":  "Ouch."
+        },
+        "questions": [
+            {
+                "q": "What is the capital of France?",
+                "a": [
+                    {"option": "Paris",      "correct": true},
+                    {"option": "Rome",       "correct": false},
+                    {"option": "Berlin",     "correct": false},
+                    {"option": "Madrid",     "correct": false}
+                ],
+                "correct":   "<p><span>Correct!</span> Paris is the capital of France.</p>",
+                "incorrect": "<p><span>Wrong.</span> The right answer is Paris.</p>"
+            },
+            {
+                "q": "Which planet is known as the Red Planet?",
+                "a": [
+                    {"option": "Venus",    "correct": false},
+                    {"option": "Mars",     "correct": true},
+                    {"option": "Jupiter",  "correct": false},
+                    {"option": "Saturn",   "correct": false}
+                ],
+                "correct":   "<p><span>Nice!</span> Mars is the Red Planet.</p>",
+                "incorrect": "<p><span>Oops.</span> It was Mars.</p>"
+            },
+            {
+                "q": "2 + 2 = ?",
+                "a": [
+                    {"option": "3", "correct": false},
+                    {"option": "4", "correct": true},
+                    {"option": "5", "correct": false}
+                ],
+                "correct":   "<p><span>Right!</span> Simple math.</p>",
+                "incorrect": "<p><span>Nope.</span> It equals 4.</p>"
+            }
+        ]
+    };
+
+    // 2) Initialize SlickQuiz on page load
+    $(document).ready(function() {
+        $('#slickQuiz').slickQuiz({
+            json: quizData,
+        });
+    });
+</script>
+</body>
+</html>
