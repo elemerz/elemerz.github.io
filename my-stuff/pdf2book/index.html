@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tankonyv V</title>
+    <script src="3rdparty/jquery.min.js"></script>
+    <script src="3rdparty/jszip.min.js"></script>
+    <script src="3rdparty/docx-preview.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #file-input { margin-bottom: 20px; }
+        #docx-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        /* The library will create elements with this class */
+        .docx-wrapper {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="controls" style="margin-bottom: 10px;">
+        <button id="prev">Previous Page</button>
+        <button id="next">Next Page</button>
+    </div>
+    <div id="docx-container"></div>
+    <script>
+        fetch('docx/hello.docx')
+            .then(r => r.arrayBuffer())
+            .then(buf => window.docx.renderAsync(
+                buf,
+                document.getElementById('docx-container'),
+                /* style container */ null,
+                { breakPages: true, inWrapper: true }
+            ))
+            .then(() => {
+                // After rendering you’ll have one .docx__page element per page.
+                const pages = document.querySelectorAll('.docx_page');
+                let current = 0;
+                function showPage(i) {
+                    pages.forEach((p, idx) =>
+                        p.style.display = idx === i ? 'block' : 'none'
+                    );
+                }
+                // e.g. simple next/prev:
+                document.getElementById('next').onclick = () => {
+                    if (current < pages.length - 1) showPage(++current);
+                };
+                document.getElementById('prev').onclick = () => {
+                    if (current > 0) showPage(--current);
+                };
+                showPage(0);
+            });
+    </script>
+</body>
+</html>
