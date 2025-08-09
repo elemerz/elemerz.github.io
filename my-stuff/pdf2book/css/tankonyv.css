@@ -1,6 +1,23 @@
-#BookContainer {
-    border: 1px solid red;
-    width:95%;
-    height: 500px;
-    margin:0 auto;
+body { font-family: sans-serif; padding: 0; }
+#file-input { margin-bottom: 20px; }
+#docx-container {
+    border: 1px solid #ccc;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+/* The library will create elements with this class */
+.docx-wrapper {
+    background-color: white;
+    padding: 20px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#controls {margin-bottom: 0;}
+#pageIndex::-webkit-outer-spin-button, #pageIndex::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.docx .docx_hyperlink {
+    color: #e7821c;
+    font-weight: bold;
+    text-decoration: underline;
 }

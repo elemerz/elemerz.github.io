@@ -1,0 +1,74 @@
+{
+  "info": {
+    "name":    "Teszteld a tudásod!",
+    "main":    "<p>Azt hiszed, elég okos vagy a Kockázat!-hoz? Derítsd ki ezzel a szuperőrült tudáskvízzel!</p>",
+    "results": "<h5>Tudj meg többet</h5><p>Két irodalmár ül a sötét szobában, mert kiégett a villanykörte.<br/>Megszólal az egyik:<br/>– Szerinted ki kéne cserélni?<br/>Mire a másik:<br/>– Várj, előbb elemezzük a sötétséget, mint a tudatlanság és az egzisztenciális üresség metaforáját.</p>",
+    "level1":  "Kockázat!-ra kész",
+    "level2":  "Kockázat! Versenyző",
+    "level3":  "Kockázat! Amatőr",
+    "level4":  "Kockázat! Újonc",
+    "level5":  "Maradj az iskolában, kölyök..."
+  },
+  "questions": [
+    {
+      "q": "Hányadik betű az A az angol ábécében?",
+      "a": [
+        {"option": "8",      "correct": false},
+        {"option": "14",     "correct": false},
+        {"option": "1",      "correct": true},
+        {"option": "23",     "correct": false}
+      ],
+      "correct": "<p><span>Helyes!</span> Az A betű az első az ábécében!</p>",
+      "incorrect": "<p><span>Ööö, nem.</span> Ez az ábécé első betűje. Tényleg <em>jártál</em> óvodába?</p>"
+    },
+    {
+      "q": "Az alábbiak közül melyik írja le legjobban a kedvenc reggelidet?",
+      "a": [
+        {"option": "Szalonna és tojás",               "correct": false},
+        {"option": "Gyümölcs, zabpehely és joghurt",   "correct": true},
+        {"option": "Maradék pizza",               "correct": false},
+        {"option": "Tojás, gyümölcs, pirítós és tej", "correct": true}
+      ],
+      "select_any": true,
+      "correct": "<p><span>Szép!</span> A koleszterinszinted valószínűleg rendben van.</p>",
+      "incorrect": "<p><span>Hmm.</span> Lehet, hogy újra kellene gondolnod a lehetőségeidet.</p>"
+    },
+    {
+      "q": "Hol vagy most? Válaszd ki az összes megfelelőt.",
+      "a": [
+        {"option": "Föld bolygó",           "correct": true},
+        {"option": "Plútó",                  "correct": false},
+        {"option": "Egy számítástechnikai eszköznél",  "correct": true},
+        {"option": "A Tejút",          "correct": true}
+      ],
+      "correct": "<p><span>Zseniális!</span> Te tényleg egy zseni vagy, ember.</p>",
+      "incorrect": "<p><span>Nem egészen.</span> Valójában a Föld bolygón vagy, a Tejúton, egy számítógépnél. De szép próbálkozás.</p>"
+    },
+    {
+      "q": "Hány hüvelyk eső esik Michiganben átlagosan évente?",
+      "a": [
+        {"option": "149",    "correct": false},
+        {"option": "32",     "correct": true},
+        {"option": "3",      "correct": false},
+        {"option": "1291",   "correct": false}
+      ],
+      "correct": "<p><span>A mindenit!</span> Nem is számítottam rá, hogy ezt tudod! Helyes!</p>",
+      "incorrect": "<p><span>Hiba.</span> Sajnálom. Vesztettél. Valójában évente körülbelül 32 hüvelyk eső esik Michiganben.</p>"
+    },
+    {
+      "q": "A Föld nagyobb, mint egy kosárlabda?",
+      "a": [
+        {
+          "option": "Igen",
+          "correct": true
+        },
+        {
+          "option": "Nem",
+          "correct": false
+        }
+      ],
+      "correct": "<p><span>Szép munka!</span> Biztosan nagyon figyelmes vagy!</p>",
+      "incorrect": "<p><span>HŰHA!</span> Te melyik Föld bolygón élsz?!?</p>"
+    }
+  ]
+}

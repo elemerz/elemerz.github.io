@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name":    "Kényes téma",
+    "main":    "<p>Teszteld a tudásod!</p>",
+    "results": "<h4>Kész vagy!</h4>",
+    "level1":  "Ez már döfi!",
+    "level2":  "Egész jó.",
+    "level3":  "Nem rossz, de még tanulnod kell!",
+    "level4":  "A következő jobb lesz.",
+    "level5":  "Pfff..."
+  },
+  "questions": [
+    {
+      "q": "Mi volt Ady Endre kedvenc sportja?",
+      "a": [
+        {"option": "Teke",      "correct": false},
+        {"option": "Futball",       "correct": true},
+        {"option": "Méta",     "correct": false},
+        {"option": "Sízés",     "correct": false}
+      ],
+      "correct":   "<p><span>Helyes!</span>Ady, Debrecen első futballcsapatának is tagja volt 1899-ben</p>",
+      "incorrect": "<p><span>Hibás.</span> A helyes válasz: Futball.</p>"
+    },
+    {
+      "q": "Ki írta a magyar irodalom első szatíráját?",
+      "a": [
+        {"option": "Apáti Ferenc",    "correct": true},
+        {"option": "Balassy Bálint",     "correct": false},
+        {"option": "Berzsenyi Dániel",  "correct": false},
+        {"option": "Vári Attila",   "correct": false}
+      ],
+      "correct":   "<p><span>Az, bizony!</span> A magyar irodalom első szatíráját, a Cantilenát Apáti Ferenc írta, 1526-ban.</p>",
+      "incorrect": "<p><span>Csak szeretnéd!</span> A helyes válasz: <b>Apáti Ferenc</b> lett volna</p>"
+    },
+    {
+      "q": "Hol írta meg Aranykoporsó című regényét Móra Ferenc?",
+      "a": [
+        {"option": "Balatonszárszón", "correct": false},
+        {"option": "Balatonföldváron", "correct": true},
+        {"option": "Kiskunfélegyházán", "correct": false},
+        {"option": "Budapesten", "correct": false}
+      ],
+      "correct":   "<p><span>Igen!</span> 1932 nyarán Balatonföldvárra utazott, hogy megírja Aranykoporsó című regényét.</p>",
+      "incorrect": "<p><span>Ádehogy.</span> A helyes: Balatonföldvár. (lett volna)</p>"
+    },
+    {
+      "q": "Milyen álnéven mutatkozott be Petőfi Vörösmartynak?",
+      "a": [
+        {"option": "Pesti Főnádor", "correct": false},
+        {"option": "Sipos János", "correct": false},
+        {"option": "Vitéz Nepomuki János", "correct": false},
+        {"option": "Pönögei Kis Pál", "correct": true}
+      ],
+      "correct":   "<p><span>Igen!</span> Petőfi Sándor 19 évesen, álnéven, Pönögei Kis Pálként mutatkozott be Vörösmarty Mihálynak, hogy őszinte véleményt kaphasson verseiről.</p>",
+      "incorrect": "<p><span>Ádehogy.</span> A helyes: Pönögei Kis Pál.</p>"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name":    "Egyszerű téma",
+    "main":    "<p>Teszteld a tudásod!</p>",
+    "results": "<h4>Kész vagy!</h4>",
+    "level1":  "Ez már döfi!",
+    "level2":  "Egész jó.",
+    "level3":  "Nem rossz, de még tanulnod kell!",
+    "level4":  "A következő jobb lesz.",
+    "level5":  "Pfff..."
+  },
+  "questions": [
+    {
+      "q": "Mi Franciaország fővárosa?",
+      "a": [
+        {"option": "Párizs",      "correct": true},
+        {"option": "Róma",       "correct": false},
+        {"option": "Berlin",     "correct": false},
+        {"option": "Madrid",     "correct": false}
+      ],
+      "correct":   "<p><span>Helyes!</span> Franciaország fővárosa tényleg Párizs.</p>",
+      "incorrect": "<p><span>Hibás.</span> A helyes válasz: Párizs</p>"
+    },
+    {
+      "q": "Melyik az úgynevezett Vörös bolygó?",
+      "a": [
+        {"option": "Vénuzs",    "correct": false},
+        {"option": "Mars",     "correct": true},
+        {"option": "Jupiter",  "correct": false},
+        {"option": "Szaturnusz",   "correct": false}
+      ],
+      "correct":   "<p><span>Ezaz!</span> A Mars a vörös bolygó.</p>",
+      "incorrect": "<p><span>Nana....</span> A Mars.</p>"
+    },
+    {
+      "q": "2 + 2 = ?",
+      "a": [
+        {"option": "3", "correct": false},
+        {"option": "4", "correct": true},
+        {"option": "5", "correct": false}
+      ],
+      "correct":   "<p><span>Igen!</span> Alap matek.</p>",
+      "incorrect": "<p><span>Francokat.</span> A helyes a 4.</p>"
+    }
+  ]
+}
