@@ -37,6 +37,9 @@ input[type="text"] {
   background-color: var(--tooltip-bg);
   color: var(--tooltip-text-color);
   border-radius: 6px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.2);
   font-size: 15px;
   line-height: 1.4;
   box-sizing: border-box;
